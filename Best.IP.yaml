@@ -160,6 +160,7 @@ rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - RULE-SET,局域网,🎯 全球直连
  - RULE-SET,自定义,🎯 全球直连
+ - RULE-SET,Docker,🌍 国外媒体
  - RULE-SET,拦截,🛑 全球拦截
  - RULE-SET,直连-1,🎯 全球直连
  - RULE-SET,直连-2,🎯 全球直连
@@ -286,4 +287,10 @@ rule-providers:
     behavior: classical
     path: ./0.own.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/own.yaml"
+    interval: 600
+  Docker:
+    type: http
+    behavior: classical
+    path: ./0.docker.yaml 
+    url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/refs/heads/rules/Docker.yaml"
     interval: 600
