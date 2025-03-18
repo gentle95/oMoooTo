@@ -1,21 +1,23 @@
-port: 7890
+port: 7893
 socks-port: 7891
+redir-port: 7892
+tproxy-port: 7895
+mixed-port: 7890
 allow-lan: true
 mode: rule
 log-level: error
 external-controller: :9090
 dns:
   enable: true
-  ipv6: false
+  ipv6: true
   listen: 127.0.0.1:5450
   enhanced-mode: redir-host
   default-nameserver:
     - 119.29.29.29
     - 223.5.5.5
   nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://1.1.1.1/dns-query
-    - tls://dns.adguard.com:853
+    - 119.29.29.29
+    - 223.5.5.5
 proxy-providers:
   CloudFlare:
     type: http
