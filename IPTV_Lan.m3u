@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U x-tvg-url="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/e.xml"
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV1.png" group-title="央视",CCTV1高清
 http://192.168.1.50:54022/rtp/239.93.5.133:9260
 #EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV2.png" group-title="央视",CCTV2高清
