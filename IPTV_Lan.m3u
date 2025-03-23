@@ -1,39 +1,39 @@
 #EXTM3U x-tvg-url="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/e.xml"
-#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV1.png" group-title="央视",CCTV1高清
+#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV1.png" group-title="央视",CCTV1高清
 http://192.168.1.50:54022/rtp/239.93.5.133:9260
-#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV2.png" group-title="央视",CCTV2高清
+#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV2.png" group-title="央视",CCTV2高清
 http://192.168.1.50:54022/rtp/239.93.5.60:8354
-#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV3" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV3.png" group-title="央视",CCTV3高清
+#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV3" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV3.png" group-title="央视",CCTV3高清
 http://192.168.1.50:54022/rtp/239.93.5.141:9320
-#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV4" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV4.png" group-title="央视",CCTV4高清
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV4" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV4.png" group-title="央视",CCTV4高清
 http://192.168.1.50:54022/rtp/239.93.4.186:7728
-#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV5" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV5.png" group-title="央视",CCTV5高清
+#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV5" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV5.png" group-title="央视",CCTV5高清
 http://192.168.1.50:54022/rtp/239.93.5.143:9332
-#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV6.png" group-title="央视",CCTV6高清
+#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV6.png" group-title="央视",CCTV6高清
 http://192.168.1.50:54022/rtp/239.93.5.144:9338
-#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV7" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV7.png" group-title="央视",CCTV7高清
+#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV7" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV7.png" group-title="央视",CCTV7高清
 http://192.168.1.50:54022/rtp/239.93.5.64:8378
-#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV8" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV8.png" group-title="央视",CCTV8高清
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV8" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV8.png" group-title="央视",CCTV8高清
 http://192.168.1.50:54022/rtp/239.93.5.145:9344
-#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV9" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV9.png" group-title="央视",CCTV9高清
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV9" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV9.png" group-title="央视",CCTV9高清
 http://192.168.1.50:54022/rtp/239.93.5.61:8360
-#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV10" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV10.png" group-title="央视",CCTV10高清
+#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV10" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV10.png" group-title="央视",CCTV10高清
 http://192.168.1.50:54022/rtp/239.93.5.65:8384
-#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV11" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV11.png" group-title="央视",CCTV11高清
+#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV11" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV11.png" group-title="央视",CCTV11高清
 http://192.168.1.50:54022/rtp/239.93.5.129:7914
-#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV12" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV12.png" group-title="央视",CCTV12高清
+#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV12" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV12.png" group-title="央视",CCTV12高清
 http://192.168.1.50:54022/rtp/239.93.5.68:8402
-#EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV13" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV13.png" group-title="央视",CCTV13高清
+#EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV13" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV13.png" group-title="央视",CCTV13高清
 http://192.168.1.50:54022/rtp/239.93.4.210:8278
-#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV14" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV14.png" group-title="央视",CCTV14高清
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV14" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV14.png" group-title="央视",CCTV14高清
 http://192.168.1.50:54022/rtp/239.93.5.69:8408
-#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV15" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV15.png" group-title="央视",CCTV15高清
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV15" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV15.png" group-title="央视",CCTV15高清
 http://192.168.1.50:54022/rtp/239.93.5.131:7918
-#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV17.png" group-title="央视",CCTV17高清
+#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV17.png" group-title="央视",CCTV17高清
 http://192.168.1.50:54022/rtp/239.93.5.154:7832
-#EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV5+" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV5+.png" group-title="央视",CCTV5+高清
+#EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV5+" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV5+.png" group-title="央视",CCTV5+高清
 http://192.168.1.50:54022/rtp/239.93.5.78:8462
-#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CCTV4K.png" group-title="央视",CCTV4K
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CCTV4K.png" group-title="央视",CCTV4K
 http://192.168.1.50:54022/rtp/239.93.4.16:7040
 #EXTINF:-1 tvg-id="爱上4K专区" tvg-name="爱上4K专区" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/爱上4K.png" group-title="4K",爱上4K专区
 http://192.168.1.50:54022/rtp/239.93.4.252:8816
@@ -47,11 +47,11 @@ http://192.168.1.50:54022/rtp/239.93.5.235:8090
 http://192.168.1.50:54022/rtp/239.93.5.246:8106
 #EXTINF:-1 tvg-id="欢笑剧场" tvg-name="欢笑剧场" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/欢笑剧场4K.png" group-title="4K",欢笑剧场4K
 http://192.168.1.50:54022/rtp/239.93.5.5:7000
-#EXTINF:-1 tvg-id="CGTN英语" tvg-name="CGTN英语" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CGTN英语.png" group-title="央视",CGTN英语
+#EXTINF:-1 tvg-id="CGTN英语" tvg-name="CGTN英语" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CGTN.png" group-title="央视",CGTN英语
 http://192.168.1.50:54022/rtp/239.93.4.206:8844
-#EXTINF:-1 tvg-id="CGTN西班牙语" tvg-name="CGTN西班牙语" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CGTN西班牙语.png" group-title="央视",CGTN西班牙语
+#EXTINF:-1 tvg-id="CGTN西班牙语" tvg-name="CGTN西班牙语" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CGTN西语.png" group-title="央视",CGTN西班牙语
 http://192.168.1.50:54022/rtp/239.93.4.204:8832
-#EXTINF:-1 tvg-id="CGTN法语" tvg-name="CGTN法语" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/CGTN法语.png" group-title="央视",CGTN法语
+#EXTINF:-1 tvg-id="CGTN法语" tvg-name="CGTN法语" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CGTN法语.png" group-title="央视",CGTN法语
 http://192.168.1.50:54022/rtp/239.93.4.205:8836
 #EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/四川卫视.png" group-title="卫视",四川卫视高清
 http://192.168.1.50:54022/rtp/239.93.5.107:8636
