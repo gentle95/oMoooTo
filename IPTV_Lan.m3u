@@ -74,9 +74,9 @@ http://192.168.1.50:54022/rtp/239.93.5.125:8750
 #EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/山东卫视.png" group-title="卫视",山东卫视高清
 http://192.168.1.50:54022/rtp/239.93.5.126:8756
 #EXTINF:-1 tvg-id="SCTV2" tvg-name="SCTV2" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/SCTV2.png" group-title="四川",SCTV2高清
-http://192.168.1.50:54022/rtp/239.93.5.71:8420
-#EXTINF:-1 tvg-id="SCTV3" tvg-name="SCTV3" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/SCTV3.png" group-title="四川",SCTV3高清
 http://192.168.1.50:54022/rtp/239.93.5.41:8240
+#EXTINF:-1 tvg-id="SCTV3" tvg-name="SCTV3" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/SCTV3.png" group-title="四川",SCTV3高清
+http://192.168.1.50:54022/rtp/239.93.5.71:8420
 #EXTINF:-1 tvg-id="SCTV4" tvg-name="SCTV4" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/SCTV4.png" group-title="四川",SCTV4高清
 http://192.168.1.50:54022/rtp/239.93.4.179:7720
 #EXTINF:-1 tvg-id="SCTV5" tvg-name="SCTV5" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/SCTV5.png" group-title="四川",SCTV5高清
