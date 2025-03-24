@@ -137,7 +137,7 @@ http://192.168.1.50:54022/rtp/239.93.5.53:8312
 http://192.168.1.50:54022/rtp/239.93.5.49:8288
 #EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/海南卫视.png" group-title="卫视",海南卫视
 http://192.168.1.50:54022/rtp/239.93.5.227:9834
-#EXTINF:-1 tvg-id="陕西农林卫视" tvg-name="陕西农林卫视" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/陕西农林卫视.png" group-title="陕西",陕西农林
+#EXTINF:-1 tvg-id="陕西农林卫视" tvg-name="陕西农林卫视" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/陕西农林卫视.png" group-title="其他",陕西农林
 http://192.168.1.50:54022/rtp/239.93.5.173:7942
 #EXTINF:-1 tvg-id="兵团卫视" tvg-name="兵团卫视" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/兵团卫视.png" group-title="卫视",兵团卫视
 http://192.168.1.50:54022/rtp/239.93.4.254:7796
@@ -421,49 +421,5 @@ http://192.168.1.50:54022/rtp/239.93.4.211:8848
 http://192.168.1.50:54022/rtp/239.93.4.207:8852
 #EXTINF:-1 tvg-id="云演艺宣传" tvg-name="云演艺宣传" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/云演艺宣传.png" group-title="其他",云演艺宣传
 http://192.168.1.50:54022/rtp/239.93.5.130:8780
-#EXTINF:-1 tvg-id="天翼高清1" tvg-name="天翼高清1" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清1.png" group-title="其他",天翼高清1
-http://192.168.1.50:54022/rtp/239.93.4.7:7014
-#EXTINF:-1 tvg-id="天翼高清2" tvg-name="天翼高清2" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清2.png" group-title="其他",天翼高清2
-http://192.168.1.50:54022/rtp/239.93.4.8:7016
-#EXTINF:-1 tvg-id="天翼高清3" tvg-name="天翼高清3" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清3.png" group-title="其他",天翼高清3
-http://192.168.1.50:54022/rtp/239.93.4.9:7018
-#EXTINF:-1 tvg-id="天翼高清4" tvg-name="天翼高清4" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清4.png" group-title="其他",天翼高清4
-http://192.168.1.50:54022/rtp/239.93.5.9:7020
-#EXTINF:-1 tvg-id="天翼高清5" tvg-name="天翼高清5" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清5.png" group-title="其他",天翼高清5
-http://192.168.1.50:54022/rtp/239.93.5.10:7022
-#EXTINF:-1 tvg-id="天翼高清6" tvg-name="天翼高清6" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清6.png" group-title="其他",天翼高清6
-http://192.168.1.50:54022/rtp/239.93.4.10:7024
-#EXTINF:-1 tvg-id="天翼高清7" tvg-name="天翼高清7" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清7.png" group-title="其他",天翼高清7
-http://192.168.1.50:54022/rtp/239.93.4.11:7026
-#EXTINF:-1 tvg-id="天翼高清8" tvg-name="天翼高清8" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清8.png" group-title="其他",天翼高清8
-http://192.168.1.50:54022/rtp/239.93.4.12:7028
-#EXTINF:-1 tvg-id="天翼高清9" tvg-name="天翼高清9" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清9.png" group-title="其他",天翼高清9
-http://192.168.1.50:54022/rtp/239.93.4.13:7030
-#EXTINF:-1 tvg-id="天翼高清10" tvg-name="天翼高清10" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清10.png" group-title="其他",天翼高清10
-http://192.168.1.50:54022/rtp/239.93.4.14:7032
-#EXTINF:-1 tvg-id="天翼高清11" tvg-name="天翼高清11" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清11.png" group-title="其他",天翼高清11
-http://192.168.1.50:54022/rtp/239.93.4.15:7034
-#EXTINF:-1 tvg-id="天翼高清12" tvg-name="天翼高清12" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/天翼高清12.png" group-title="其他",天翼高清12
-http://192.168.1.50:54022/rtp/239.93.5.15:7036
 #EXTINF:-1 tvg-id="创新及人才文化节" tvg-name="创新及人才文化节" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/创新及人才文化节.png" group-title="其他",创新及人才文化节
 http://192.168.1.50:54022/rtp/239.93.4.27:8170
-#EXTINF:-1 tvg-id="华西证券" tvg-name="华西证券" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/华西证券.png" group-title="其他",华西证券
-http://192.168.1.50:54022/rtp/239.93.5.206:8840
-#EXTINF:-1 tvg-id="央视频道1" tvg-name="央视频道1" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/央视频道1.png" group-title="央视",央视频道1
-http://192.168.1.50:54022/rtp/239.93.4.164:7658
-#EXTINF:-1 tvg-id="央视频道2" tvg-name="央视频道2" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/央视频道2.png" group-title="央视",央视频道2
-http://192.168.1.50:54022/rtp/239.93.4.49:7176
-#EXTINF:-1 tvg-id="本地频道1" tvg-name="本地频道1" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/本地频道1.png" group-title="其他",本地频道1
-http://192.168.1.50:54022/rtp/239.93.4.167:7670
-#EXTINF:-1 tvg-id="本地频道2" tvg-name="本地频道2" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/本地频道2.png" group-title="其他",本地频道2
-http://192.168.1.50:54022/rtp/239.93.4.51:7184
-#EXTINF:-1 tvg-id="热门卫视" tvg-name="热门卫视" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/热门卫视.png" group-title="卫视",热门卫视
-http://192.168.1.50:54022/rtp/239.93.4.50:7180
-#EXTINF:-1 tvg-id="地方卫视1" tvg-name="地方卫视1" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/地方卫视1.png" group-title="卫视",地方卫视1
-http://192.168.1.50:54022/rtp/239.93.4.169:7678
-#EXTINF:-1 tvg-id="地方卫视2" tvg-name="地方卫视2" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/地方卫视2.png" group-title="卫视",地方卫视2
-http://192.168.1.50:54022/rtp/239.93.4.170:7682
-#EXTINF:-1 tvg-id="综合卫视" tvg-name="综合卫视" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/综合卫视.png" group-title="卫视",综合卫视
-http://192.168.1.50:54022/rtp/239.93.4.168:7674
-#EXTINF:-1 tvg-id="付费频道" tvg-name="付费频道" tvg-logo="https://git.ddxm.pp.ua/raw.githubusercontent.com/sparkssssssssss/epg/main/logo/付费.png" group-title="其他",付费频道
-http://192.168.1.50:54022/rtp/239.93.4.171:7686
