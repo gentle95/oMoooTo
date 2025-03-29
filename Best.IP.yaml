@@ -69,8 +69,8 @@ proxy-groups:
   - name: 🚀 故障转移
     type: fallback
     proxies:
-      - ♻️ Google_Cloud
       - 🌈 CloudFlare_Cloud
+      - ♻️ Google_Cloud
   - name: 💦 手动选择
     type: select
     proxies:
