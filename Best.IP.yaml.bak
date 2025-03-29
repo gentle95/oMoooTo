@@ -21,7 +21,8 @@ dns:
 proxy-providers:
   CloudFlare:
     type: http
-    url: "https://cf2.ddxm.pp.ua/ce8b5bb9-bff8-41bb-977b-19d2f58c089d?b64"
+    #url: "https://cf2.ddxm.pp.ua/ce8b5bb9-bff8-41bb-977b-19d2f58c089d?b64"
+    url: "http://192.168.1.50:8199/all.yaml"
     path: ./cloudflarevless.yaml
     health-check:
       enable: true
@@ -36,14 +37,6 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-  FreeOnline:
-    type: http
-    url: "http://192.168.1.50:8199/all.yaml"
-    path: ./freeonline.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -52,7 +45,6 @@ proxy-groups:
       - 🚀 故障转移
       - 🌈 CloudFlare_Cloud
       - ♻️ Google_Cloud
-      - 🌻 FreeOnline
       - 💦 手动选择
       - 🎯 全球直连
   - name: 🌊 全部节点
@@ -62,7 +54,6 @@ proxy-groups:
     use:
       - CloudFlare
       - Google
-      - FreeOnline
   - name: 🌈 CloudFlare_Cloud
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -75,18 +66,11 @@ proxy-groups:
     interval: 300
     use:
       - Google
-  - name: 🌻 FreeOnline
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    use:
-      - FreeOnline
   - name: 🚀 故障转移
     type: fallback
     proxies:
-      - 🌻 FreeOnline
-      - ♻️ Google_Cloud
       - 🌈 CloudFlare_Cloud
+      - ♻️ Google_Cloud
   - name: 💦 手动选择
     type: select
     proxies:
@@ -94,7 +78,6 @@ proxy-groups:
     use:
       - Google
       - CloudFlare
-      - FreeOnline
   - name: ♨ Hot
     type: select
     proxies:
@@ -102,7 +85,6 @@ proxy-groups:
       - 🔰 节点选择
       - 🌈 CloudFlare_Cloud
       - ♻️ Google_Cloud
-      - 🌻 FreeOnline
       - 🎯 全球直连
   - name: 🌍 国外媒体
     type: select
@@ -111,7 +93,6 @@ proxy-groups:
       - 💦 手动选择
       - 🌈 CloudFlare_Cloud
       - ♻️ Google_Cloud
-      - 🌻 FreeOnline
       - 🎯 全球直连
   - name: Ⓜ️ 微软服务
     type: select
@@ -120,7 +101,6 @@ proxy-groups:
       - 💦 手动选择
       - 🌈 CloudFlare_Cloud
       - ♻️ Google_Cloud
-      - 🌻 FreeOnline
       - 🎯 全球直连
   - name: 🎮 Steam
     type: select
@@ -129,7 +109,6 @@ proxy-groups:
       - 💦 手动选择
       - 🌈 CloudFlare_Cloud
       - ♻️ Google_Cloud
-      - 🌻 FreeOnline
       - 🎯 全球直连
   - name: 📲 电报信息
     type: select
@@ -138,7 +117,6 @@ proxy-groups:
       - 💦 手动选择
       - 🌈 CloudFlare_Cloud
       - ♻️ Google_Cloud
-      - 🌻 FreeOnline
       - 🎯 全球直连
   - name: 🍎 苹果服务
     type: select
@@ -147,7 +125,6 @@ proxy-groups:
       - 💦 手动选择
       - 🌈 CloudFlare_Cloud
       - ♻️ Google_Cloud
-      - 🌻 FreeOnline
       - 🎯 全球直连
   - name: 🚅 网络测速
     type: select
@@ -156,8 +133,7 @@ proxy-groups:
       - 🔰 节点选择
       - 💦 手动选择
       - 🌈 CloudFlare_Cloud
-      - ♻️ Google_Cloud
-      - 🌻 FreeOnline
+      - ♻️ Google_Cloud      
   - name: 🏴󠁨󠁮󠁧󠁤󠁿 OpenAI
     type: select
     proxies:
@@ -165,7 +141,6 @@ proxy-groups:
       - 💦 手动选择
       - 🌈 CloudFlare_Cloud
       - ♻️ Google_Cloud
-      - 🌻 FreeOnline
       - 🎯 全球直连
   - name: 🎯 全球直连
     type: select
@@ -184,7 +159,6 @@ proxy-groups:
       - 💦 手动选择
       - 🌈 CloudFlare_Cloud
       - ♻️ Google_Cloud
-      - 🌻 FreeOnline
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - RULE-SET,局域网,🎯 全球直连
