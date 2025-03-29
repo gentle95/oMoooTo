@@ -21,7 +21,8 @@ dns:
 proxy-providers:
   CloudFlare:
     type: http
-    url: "https://cf2.ddxm.pp.ua/ce8b5bb9-bff8-41bb-977b-19d2f58c089d?b64"
+    #url: "https://cf2.ddxm.pp.ua/ce8b5bb9-bff8-41bb-977b-19d2f58c089d?b64"
+    url: "http://192.168.1.50:8199/all.yaml"
     path: ./cloudflarevless.yaml
     health-check:
       enable: true
