@@ -38,7 +38,7 @@ proxy-providers:
       interval: 300
   FreeOnline:
     type: http
-    url: "http://192.168.1.50:8199/all.yaml"
+    url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/d03f3566f71e77c14f292f66013002e0/raw/all.yaml"
     path: ./freeonline.yaml
     health-check:
       enable: true
