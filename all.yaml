@@ -1,1 +1,953 @@
-186
+proxies:
+    - client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1E6加拿大1 | ⬇️ 10.7MB/s"
+      network: ws
+      port: "443"
+      server: 104.26.7.37
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1E6加拿大2 | ⬇️ 10.8MB/s"
+      network: ws
+      port: "443"
+      server: 162.159.44.209
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1EC\U0001F1E7英国1 | ⬇️ 1.8MB/s"
+      password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+      port: "12364"
+      server: 183.240.255.75
+      type: ss
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7韩国1 | ⬇️ 3.2MB/s"
+      network: ws
+      port: "443"
+      server: 195.85.59.161
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 1.3MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.119
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Linux; Android 7.1; Mi A1 Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+        path: Telegram@WangCai2/?ed=2560
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 11.7MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.149
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
+        path: /Telegram@WangCai2/?ed=2560
+      xudp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1F7\U0001F1FA俄罗斯1 | ⬇️ 1.4MB/s"
+      obfs: salamander
+      obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+      password: e4b71b74-6e77-4397-afb3-842962f7098e
+      port: "33007"
+      server: 195.133.5.127
+      skip-cert-verify: true
+      sni: ""
+      type: hysteria2
+      up: ""
+    - name: "\U0001F1E6\U0001F1FA澳大利亚1 | ⬇️ 1.3MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.188
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
+        path: Telegram@WangCai2/?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7韩国2 | ⬇️ 11.1MB/s"
+      network: ws
+      port: "443"
+      server: 108.162.195.159
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1EB\U0001F1F7法国1 | ⬇️ 15.4MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: dongtaiwang.com
+      port: "61770"
+      server: 51.159.226.1
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+      up: ""
+    - client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1E6加拿大3 | ⬇️ 7.5MB/s"
+      network: ws
+      port: "443"
+      server: 104.17.48.63
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 1.4MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.114
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+        path: Telegram@WangCai2/?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7韩国3 | ⬇️ 10.5MB/s"
+      network: ws
+      port: "443"
+      server: 162.159.44.159
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F300其他1-未识别 | ⬇️ 11.2MB/s"
+      network: ws
+      port: "443"
+      server: 108.162.195.173
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+        path: /?ed=2560flow=-udp443
+      xudp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1F0\U0001F1F7韩国4 | ⬇️ 22.7MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 43.203.249.105
+      type: ss
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1E6加拿大4 | ⬇️ 10.1MB/s"
+      network: ws
+      port: "443"
+      server: 172.67.106.26
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.100 Safari/534.30
+        path: /?ed=2560
+      xudp: true
+    - name: "\U0001F1EE\U0001F1F3印度1 | ⬇️ 12.1MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.134
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+        path: Telegram@WangCai2/?ed
+      xudp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 32.3MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 13.213.69.248
+      type: ss
+      udp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1F7\U0001F1FA俄罗斯2 | ⬇️ 13.1MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: dongtaiwang.com
+      port: "4395"
+      server: 46.17.41.217
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+      up: ""
+    - name: "\U0001F1E9\U0001F1EA德国1 | ⬇️ 10.2MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.153
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+        path: /Telegram@WangCai2/?ed=2560
+      xudp: true
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 1.2MB/s"
+      network: ws
+      port: 22641
+      server: tk.hzlt.tkddns.xyz
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+      ws-opts:
+        headers:
+            Host: zxjp-a.tkong.cc
+        path: /
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 1.4MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.233
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+        path: Telegram@WangCai2/?ed=2560flow=-udp443
+      xudp: true
+    - name: "\U0001F1E9\U0001F1EA德国2 | ⬇️ 1.0MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.109
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+        path: Telegram@WangCai2/?ed=2560
+      xudp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1F8\U0001F1EC新加坡2 | ⬇️ 2.7MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 47.129.51.201
+      type: ss
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F300其他2-未识别 | ⬇️ 10.5MB/s"
+      network: ws
+      port: "443"
+      server: 172.66.40.87
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/5.0.342.1 Safari/533.2
+        path: /?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7韩国5 | ⬇️ 10.7MB/s"
+      network: ws
+      port: "443"
+      server: 104.26.6.37
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36
+        path: /?ed=2560flow=-udp443
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F300其他3-IS | ⬇️ 11.0MB/s"
+      network: ws
+      port: "443"
+      server: 104.17.221.248
+      servername: is.oldcloud.online
+      tls: true
+      type: vless
+      udp: true
+      uuid: 753fa8e8-a3e8-442e-abf7-875ed776eacb
+      ws-opts:
+        headers:
+            Host: is.oldcloud.online
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36
+        path: /
+      xudp: true
+    - flow: -udp443
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EA德国3 | ⬇️ 7.3MB/s"
+      network: tcp
+      port: "2096"
+      server: 64.225.108.157
+      type: vless
+      udp: true
+      uuid: c2ef0d95-8c91-4ecd-943f-191c6223b6ad
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7韩国6 | ⬇️ 1.2MB/s"
+      network: ws
+      port: "443"
+      server: 104.22.36.243
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F300其他4-未识别 | ⬇️ 10.7MB/s"
+      network: ws
+      port: "443"
+      server: 162.159.44.207
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7韩国7 | ⬇️ 1.3MB/s"
+      network: ws
+      port: "443"
+      server: 104.26.10.222
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - alpn:
+        - h3
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1EB\U0001F1F7法国2 | ⬇️ 9.7MB/s"
+      network: tcp
+      port: "36105"
+      server: b.vahidvpn.com.tr
+      tls: true
+      type: vless
+      udp: true
+      uuid: 24c1e26a-af2e-4e11-9a8e-52d12e7f5e69
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 12.2MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.131
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7韩国8 | ⬇️ 9.6MB/s"
+      network: ws
+      port: "443"
+      server: 162.159.44.194
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36
+        path: /?ed=2560flow=-udp443
+      xudp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8美国7 | ⬇️ 9.4MB/s"
+      network: ws
+      port: 2096
+      server: 104.18.119.222
+      servername: 1743256978.speed.adl.cccp.freefly.pp.ua
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
+      ws-opts:
+        headers:
+            Host: 1743256978.speed.adl.cccp.freefly.pp.ua
+        path: /
+      xudp: true
+    - name: "\U0001F1EB\U0001F1F7法国3 | ⬇️ 11.0MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.252
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J700M Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+        path: /Telegram@WangCai2/?ed=2560
+      xudp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1F8\U0001F1EC新加坡3 | ⬇️ 32.6MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 3.0.50.161
+      type: ss
+      udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1FA\U0001F1F8美国8 | ⬇️ 1.7MB/s"
+      network: tcp
+      port: "33718"
+      reality-opts:
+        public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
+        short-id: ""
+      server: 31.59.111.49
+      servername: icloud.cdn-apple.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: e657e5fb-c417-4d3f-d84e-a3a8f010f9fa
+      xudp: true
+    - name: "\U0001F1F0\U0001F1F7韩国9 | ⬇️ 7.3MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.200
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
+        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed"
+      xudp: true
+    - name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 11.1MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.242
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+        path: /Telegram@WangCai2/?ed=2560
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8美国9 | ⬇️ 10.3MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.199
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+        path: /Telegram@WangCai2/?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7韩国10 | ⬇️ 9.0MB/s"
+      network: ws
+      port: "443"
+      server: 130.250.137.19
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F300其他5-IS | ⬇️ 9.6MB/s"
+      network: ws
+      port: "443"
+      server: 198.41.209.70
+      servername: is.oldcloud.online
+      tls: true
+      type: vless
+      udp: true
+      uuid: 753fa8e8-a3e8-442e-abf7-875ed776eacb
+      ws-opts:
+        headers:
+            Host: is.oldcloud.online
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+        path: /
+      xudp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1FA\U0001F1F8美国10 | ⬇️ 4.5MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 54.244.97.108
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1EC\U0001F1E7英国2 | ⬇️ 2.1MB/s"
+      password: f8f7aCzcPKbsF8p3
+      port: "989"
+      server: 62.100.205.48
+      type: ss
+      udp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1EB\U0001F1F7法国4 | ⬇️ 16.8MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: dongtaiwang.com
+      port: "59967"
+      server: 195.154.33.70
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+      up: ""
+    - client-fingerprint: edge
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1EF\U0001F1F5日本2 | ⬇️ 32.8MB/s"
+      network: tcp
+      port: "21107"
+      reality-opts:
+        public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU
+        short-id: ""
+      server: 13.230.156.219
+      servername: s0.awsstatic.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: a55b6db8-1c15-4f24-bb5b-8049e070426a
+      xudp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1F9\U0001F1FC台湾1 | ⬇️ 4.8MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: 82febca6-8856-41fe-84df-c8bda0b72c7b
+      port: "30001"
+      server: tw.akebi.cc
+      skip-cert-verify: false
+      sni: tw.akebi.cc
+      type: hysteria2
+      up: ""
+    - cipher: aes-256-cfb
+      name: "\U0001F1F8\U0001F1EC新加坡4 | ⬇️ 14.2MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 47.129.38.96
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1F0\U0001F1F7韩国11 | ⬇️ 23.5MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 43.202.67.225
+      type: ss
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F9\U0001F1FC台湾2 | ⬇️ 10.0MB/s"
+      network: ws
+      port: "443"
+      server: 172.64.35.127
+      servername: edfgv.aimercc.filegear-sg.me
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            Host: edfgv.aimercc.filegear-sg.me
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+        path: /?ed=2560flow=-udp443
+      xudp: true
+    - name: "\U0001F1E9\U0001F1EA德国4 | ⬇️ 14.9MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.214
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
+      xudp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1F9\U0001F1FC台湾3 | ⬇️ 25.1MB/s"
+      network: tcp
+      port: "34313"
+      reality-opts:
+        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+        short-id: ""
+      server: 120.238.53.237
+      servername: gateway.icloud.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+      xudp: true
+    - alterId: "0"
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0香港1 | ⬇️ 1.0MB/s"
+      network: tcp
+      port: "34093"
+      server: 120.198.71.214
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      xudp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1EF\U0001F1F5日本3 | ⬇️ 5.9MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 43.207.203.164
+      type: ss
+      udp: true
+    - name: "\U0001F1E6\U0001F1FA澳大利亚2 | ⬇️ 11.6MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.192
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36
+        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
+      xudp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1E6\U0001F1FA澳大利亚3 | ⬇️ 8.0MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: 82febca6-8856-41fe-84df-c8bda0b72c7b
+      port: "2006"
+      server: tw3.akebi.cc
+      skip-cert-verify: false
+      sni: au01.akebi.cc
+      type: hysteria2
+      up: ""
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0香港2 | ⬇️ 2.0MB/s"
+      network: ws
+      port: 443
+      server: www.visa.com.tw
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: 47eab0de-97f9-49be-f2f3-2e4eb17268e6
+      ws-opts:
+        headers:
+            Host: hk.insbot.filegear-sg.me
+        path: /aa
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1E8\U0001F1E6加拿大5 | ⬇️ 9.7MB/s"
+      network: ws
+      port: "443"
+      server: 104.19.174.68
+      servername: il.ylkszy.eu.org
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            Host: il.ylkszy.eu.org
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F300其他6-IS | ⬇️ 5.3MB/s"
+      network: ws
+      port: "443"
+      server: 104.19.48.236
+      servername: is.oldcloud.online
+      tls: true
+      type: vless
+      udp: true
+      uuid: 753fa8e8-a3e8-442e-abf7-875ed776eacb
+      ws-opts:
+        headers:
+            Host: is.oldcloud.online
+            User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36
+        path: /
+      xudp: true
+    - name: "\U0001F1EF\U0001F1F5日本4 | ⬇️ 6.4MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.108
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+        path: /Telegram@WangCai2
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F300其他7-IS | ⬇️ 8.5MB/s"
+      network: ws
+      port: "443"
+      server: 104.16.155.10
+      servername: is.oldcloud.online
+      tls: true
+      type: vless
+      udp: true
+      uuid: 753fa8e8-a3e8-442e-abf7-875ed776eacb
+      ws-opts:
+        headers:
+            Host: is.oldcloud.online
+            User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36
+        path: /
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8美国11 | ⬇️ 13.8MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.113
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
+      xudp: true
+    - cipher: aes-256-gcm
+      name: "\U0001F1FA\U0001F1F8美国12 | ⬇️ 4.6MB/s"
+      password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
+      port: "41705"
+      server: zf1.10101251.xyz
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1F8\U0001F1EC新加坡5 | ⬇️ 14.0MB/s"
+      obfs: tls1.2_ticket_auth
+      obfs-param: sg2-cdn-route.couldflare-cdn.com
+      password: uiACqrIr
+      port: "56138"
+      protocol: origin
+      server: cm2.xcone.xyz
+      type: ssr
+      udp: true
+    - name: "\U0001F1EB\U0001F1EE芬兰1 | ⬇️ 1.7MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.128
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+        path: Telegram@WangCai2/?ed
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8美国13 | ⬇️ 8.5MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.115
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36
+        path: /Telegram@WangCai2/?ed=2560
+      xudp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1F7\U0001F1FA俄罗斯3 | ⬇️ 13.7MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: dongtaiwang.com
+      port: "12904"
+      server: 46.17.41.5
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria2
+      up: ""
+    - name: "\U0001F1EE\U0001F1F3印度2 | ⬇️ 8.9MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.248
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36
+        path: /Telegram@WangCai2/?ed=2560
+      xudp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1F0\U0001F1F7韩国12 | ⬇️ 22.0MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 3.36.72.86
+      type: ss
+      udp: true
+    - name: "\U0001F300其他8-SE | ⬇️ 1.5MB/s"
+      network: ws
+      port: "80"
+      server: 45.131.4.227
+      type: vless
+      udp: true
+      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+      ws-opts:
+        headers:
+            Host: gozargah.validbv7996.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+        path: Telegram@WangCai2/?ed
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F300其他9-IS | ⬇️ 3.6MB/s"
+      network: ws
+      port: "443"
+      server: 104.17.213.241
+      servername: is.oldcloud.online
+      tls: true
+      type: vless
+      udp: true
+      uuid: 753fa8e8-a3e8-442e-abf7-875ed776eacb
+      ws-opts:
+        headers:
+            Host: is.oldcloud.online
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+        path: /
+      xudp: true
