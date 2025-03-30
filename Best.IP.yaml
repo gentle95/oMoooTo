@@ -30,7 +30,7 @@ proxy-providers:
     exclude-filter: "教程|Channel|CFnat"
   Google:
     type: http
-    url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/0286c98ea86e1e7f34050b023bdb918c/raw/5e6afb548dbd52f31d802a60738397b0da510902/Vless"
+    url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/0286c98ea86e1e7f34050b023bdb918c/raw/Vless"
     path: ./googlevless.yaml
     health-check:
       enable: true
