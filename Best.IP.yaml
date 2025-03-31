@@ -224,21 +224,21 @@ rule-providers:
   LocalAreaNetwork:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-    path: ./ruleset/LocalAreaNetwork.list
+    path: ./ruleset/00_LocalAreaNetwork.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   UnBan:
     url: 'https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list'
-    path: ./ruleset/UnBan.list
+    path: ./ruleset/00_UnBan.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   BanAD:
     url: 'https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list'
-    path: ./ruleset/BanAD.list
+    path: ./ruleset/00_BanAD.list
     behavior: classical
     interval: 86400
     format: text
@@ -246,7 +246,7 @@ rule-providers:
   BanProgramAD:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-    path: ./ruleset/BanProgramAD.list
+    path: ./ruleset/00_BanProgramAD.list
     behavior: classical
     interval: 86400
     format: text
@@ -254,7 +254,7 @@ rule-providers:
   GoogleFCM:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
-    path: ./ruleset/GoogleFCM.list
+    path: ./ruleset/00_GoogleFCM.list
     behavior: classical
     interval: 86400
     format: text
@@ -262,7 +262,7 @@ rule-providers:
   GoogleCN:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-    path: ./ruleset/GoogleCN.list
+    path: ./ruleset/00_GoogleCN.list
     behavior: classical
     interval: 86400
     format: text
@@ -270,14 +270,14 @@ rule-providers:
   SteamCN:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
-    path: ./ruleset/SteamCN.list
+    path: ./ruleset/00_SteamCN.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Bing:
     url: 'https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Bing.list'
-    path: ./ruleset/Bing.list
+    path: ./ruleset/00_Bing.list
     behavior: classical
     interval: 86400
     format: text
@@ -285,7 +285,7 @@ rule-providers:
   OneDrive:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
-    path: ./ruleset/OneDrive.list
+    path: ./ruleset/00_OneDrive.list
     behavior: classical
     interval: 86400
     format: text
@@ -293,14 +293,14 @@ rule-providers:
   Microsoft:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
-    path: ./ruleset/Microsoft.list
+    path: ./ruleset/00_Microsoft.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Apple:
     url: 'https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list'
-    path: ./ruleset/Apple.list
+    path: ./ruleset/00_Apple.list
     behavior: classical
     interval: 86400
     format: text
@@ -308,7 +308,7 @@ rule-providers:
   Telegram:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
-    path: ./ruleset/Telegram.list
+    path: ./ruleset/00_Telegram.list
     behavior: classical
     interval: 86400
     format: text
@@ -316,7 +316,7 @@ rule-providers:
   OpenAi:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
-    path: ./ruleset/OpenAi.list
+    path: ./ruleset/00_OpenAi.list
     behavior: classical
     interval: 86400
     format: text
@@ -324,7 +324,7 @@ rule-providers:
   NetEaseMusic:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
-    path: ./ruleset/NetEaseMusic.list
+    path: ./ruleset/00_NetEaseMusic.list
     behavior: classical
     interval: 86400
     format: text
@@ -332,7 +332,7 @@ rule-providers:
   Epic:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list
-    path: ./ruleset/Epic.list
+    path: ./ruleset/00_Epic.list
     behavior: classical
     interval: 86400
     format: text
@@ -340,7 +340,7 @@ rule-providers:
   Origin:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list
-    path: ./ruleset/Origin.list
+    path: ./ruleset/00_Origin.list
     behavior: classical
     interval: 86400
     format: text
@@ -348,7 +348,7 @@ rule-providers:
   Sony:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
-    path: ./ruleset/Sony.list
+    path: ./ruleset/00_Sony.list
     behavior: classical
     interval: 86400
     format: text
@@ -356,7 +356,7 @@ rule-providers:
   Steam:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
-    path: ./ruleset/Steam.list
+    path: ./ruleset/00_Steam.list
     behavior: classical
     interval: 86400
     format: text
@@ -364,7 +364,7 @@ rule-providers:
   Nintendo:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list
-    path: ./ruleset/Nintendo.list
+    path: ./ruleset/00_Nintendo.list
     behavior: classical
     interval: 86400
     format: text
@@ -372,7 +372,7 @@ rule-providers:
   YouTube:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
-    path: ./ruleset/YouTube.list
+    path: ./ruleset/00_YouTube.list
     behavior: classical
     interval: 86400
     format: text
@@ -380,7 +380,7 @@ rule-providers:
   Netflix:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
-    path: ./ruleset/Netflix.list
+    path: ./ruleset/00_Netflix.list
     behavior: classical
     interval: 86400
     format: text
@@ -388,7 +388,7 @@ rule-providers:
   Bahamut:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
-    path: ./ruleset/Bahamut.list
+    path: ./ruleset/00_Bahamut.list
     behavior: classical
     interval: 86400
     format: text
@@ -396,7 +396,7 @@ rule-providers:
   BilibiliHMT:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
-    path: ./ruleset/BilibiliHMT.list
+    path: ./ruleset/00_BilibiliHMT.list
     behavior: classical
     interval: 86400
     format: text
@@ -404,7 +404,7 @@ rule-providers:
   Bilibili:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
-    path: ./ruleset/Bilibili.list
+    path: ./ruleset/00_Bilibili.list
     behavior: classical
     interval: 86400
     format: text
@@ -412,7 +412,7 @@ rule-providers:
   ChinaMedia:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
-    path: ./ruleset/ChinaMedia.list
+    path: ./ruleset/00_ChinaMedia.list
     behavior: classical
     interval: 86400
     format: text
@@ -420,7 +420,7 @@ rule-providers:
   ProxyMedia:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-    path: ./ruleset/ProxyMedia.list
+    path: ./ruleset/00_ProxyMedia.list
     behavior: classical
     interval: 86400
     format: text
@@ -428,7 +428,7 @@ rule-providers:
   ProxyGFWlist:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
-    path: ./ruleset/ProxyGFWlist.list
+    path: ./ruleset/00_ProxyGFWlist.list
     behavior: classical
     interval: 86400
     format: text
@@ -436,7 +436,7 @@ rule-providers:
   ChinaDomain:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-    path: ./ruleset/ChinaDomain.list
+    path: ./ruleset/00_ChinaDomain.list
     behavior: domain
     interval: 86400
     format: text
@@ -444,7 +444,7 @@ rule-providers:
   ChinaCompanyIp:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-    path: ./ruleset/ChinaCompanyIp.list
+    path: ./ruleset/00_ChinaCompanyIp.list
     behavior: ipcidr
     interval: 86400
     format: text
@@ -452,7 +452,7 @@ rule-providers:
   Download:
     url: >-
       https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
-    path: ./ruleset/Download.list
+    path: ./ruleset/00_Download.list
     behavior: classical
     interval: 86400
     format: text
@@ -460,19 +460,19 @@ rule-providers:
   测速:
     type: http
     behavior: classical
-    path: ./ruleset/speed.yaml 
+    path: ./ruleset/00_speed.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.yaml"
     interval: 600
   hot:
     type: http
     behavior: classical
-    path: ./ruleset/hot.yaml 
+    path: ./ruleset/00_hot.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/hot.yaml"
     interval: 600
   自定义:
     type: http
     behavior: classical
-    path: ./ruleset/own.yaml 
+    path: ./ruleset/00_own.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/own.yaml"
     interval: 600
 rules:
