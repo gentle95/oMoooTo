@@ -155,6 +155,7 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 💦 手动切换
+      - 🎥 奈飞节点
       - ♻️ Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
@@ -192,6 +193,10 @@ proxy-groups:
       - 💦 手动切换
       - ♻️ Google_Cloud
       - 🌈 FreeOnline
+  - name: "🎥 奈飞节点"
+    include-all: true
+    filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
+    type: select
   - name: 🎯 全球直连
     type: select
     proxies:
