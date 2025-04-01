@@ -1,5 +1,0 @@
-vless://ce8b5bb9-bff8-41bb-977b-19d2f58c089d@172.64.111.98:2053?encryption=none&security=tls&sni=cf.ddxm.pp.ua&fp=randomized&type=ws&host=cf.ddxm.pp.ua&path=%2F%3Fed%3D2048#CloudFlare-Vless-1
-vless://ce8b5bb9-bff8-41bb-977b-19d2f58c089d@104.21.28.97:2083?encryption=none&security=tls&sni=cf.ddxm.pp.ua&fp=randomized&type=ws&host=cf.ddxm.pp.ua&path=%2F%3Fed%3D2048#CloudFlare-Vless-2
-vless://ce8b5bb9-bff8-41bb-977b-19d2f58c089d@104.22.39.190:2087?encryption=none&security=tls&sni=cf.ddxm.pp.ua&fp=randomized&type=ws&host=cf.ddxm.pp.ua&path=%2F%3Fed%3D2048#CloudFlare-Vless-3
-vless://ce8b5bb9-bff8-41bb-977b-19d2f58c089d@104.17.134.180:2096?encryption=none&security=tls&sni=cf.ddxm.pp.ua&fp=randomized&type=ws&host=cf.ddxm.pp.ua&path=%2F%3Fed%3D2048#CloudFlare-Vless-4
-vless://ce8b5bb9-bff8-41bb-977b-19d2f58c089d@104.17.66.0:8443?encryption=none&security=tls&sni=cf.ddxm.pp.ua&fp=randomized&type=ws&host=cf.ddxm.pp.ua&path=%2F%3Fed%3D2048#CloudFlare-Vless-5
