@@ -73,6 +73,7 @@ proxy-groups:
       - 🎯 全球直连
     use:
       - Google
+      - CF_BPB
       - FreeOnline
   - name: ♨ Hot
     type: select
