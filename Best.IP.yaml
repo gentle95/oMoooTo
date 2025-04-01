@@ -23,7 +23,7 @@ proxy-groups:
       - 💱 故障转移
       - 🍃 GoogleVless
       - 🍂 FreeOnline
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🎯 全球直连
   - name: 🍀 自动切换
     type: url-test
@@ -51,7 +51,7 @@ proxy-groups:
       - 🍂 FreeOnline
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: 💦 手动切换
+  - name: 🐳 手动切换
     type: select
     proxies:
       - 🎯 全球直连
@@ -61,7 +61,7 @@ proxy-groups:
   - name: ♨ Hot
     type: select
     proxies:
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🔰 节点选择
       - 🍃 GoogleVless
       - 🍂 FreeOnline
@@ -71,12 +71,12 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 💦 手动切换
-  - name: 🌍 国外媒体
+      - 🐳 手动切换
+  - name: 🌎 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
       - 🎯 全球直连
@@ -84,7 +84,7 @@ proxy-groups:
     type: select
     proxies:
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
       - 🎯 全球直连
@@ -93,7 +93,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
   - name: Ⓜ️ 微软云盘
@@ -101,14 +101,14 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
       - 🎯 全球直连
@@ -116,7 +116,7 @@ proxy-groups:
     type: select
     proxies:
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
       - 🎯 全球直连
@@ -124,7 +124,7 @@ proxy-groups:
     type: select
     proxies:
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
       - 🎯 全球直连
@@ -132,7 +132,7 @@ proxy-groups:
     type: select
     proxies:
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
       - 🎯 全球直连
@@ -141,14 +141,14 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
   - name: 📹 油管视频
     type: select
     proxies:
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
       - 🎯 全球直连
@@ -156,7 +156,7 @@ proxy-groups:
     type: select
     proxies:
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🎥 奈飞节点
       - 🍃 GoogleVless
       - 🍂 FreeOnline
@@ -165,7 +165,7 @@ proxy-groups:
     type: select
     proxies:
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
       - 🎯 全球直连
@@ -174,14 +174,14 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
   - name: 💬 OpenAi
     type: select
     proxies:
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
       - 🎯 全球直连
@@ -192,7 +192,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
   - name: "🎥 奈飞节点"
@@ -218,7 +218,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 💦 手动切换
+      - 🐳 手动切换
       - 🍃 GoogleVless
       - 🍂 FreeOnline
 
@@ -506,7 +506,7 @@ rules:
   - "RULE-SET,BilibiliHMT,📺 哔哩哔哩"
   - "RULE-SET,Bilibili,📺 哔哩哔哩"
   - "RULE-SET,ChinaMedia,🌏 国内媒体"
-  - "RULE-SET,ProxyMedia,🌍 国外媒体"
+  - "RULE-SET,ProxyMedia,🌎 国外媒体"
   - "RULE-SET,ProxyGFWlist,🔰 节点选择"
   - "RULE-SET,ChinaDomain,🎯 全球直连"
   - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
