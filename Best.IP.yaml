@@ -20,7 +20,7 @@ proxy-groups:
     type: select
     proxies:
       - 🍀 自动切换
-      - 🚀 故障转移
+      - 💱 故障转移
       - 🍃 GoogleVless
       - 🌈 FreeOnline
       - 💦 手动切换
@@ -44,7 +44,7 @@ proxy-groups:
     interval: 300
     use:
       - FreeOnline
-  - name: 🚀 故障转移
+  - name: 💱 故障转移
     type: fallback
     proxies:
       - 🍃 GoogleVless
