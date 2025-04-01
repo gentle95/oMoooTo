@@ -40,6 +40,7 @@ proxy-groups:
     interval: 300
     use:
       - Google
+      - CF_BPB
       - FreeOnline
   - name: 🍃 GoogleVless
     type: url-test
