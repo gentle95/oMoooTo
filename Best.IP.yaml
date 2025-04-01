@@ -21,7 +21,7 @@ proxy-groups:
     proxies:
       - 🍀 自动切换
       - 🚀 故障转移
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 💦 手动切换
       - 🎯 全球直连
@@ -32,7 +32,7 @@ proxy-groups:
     use:
       - Google
       - FreeOnline
-  - name: ♻️ Google_Cloud
+  - name: 🍃 Google_Cloud
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -47,7 +47,7 @@ proxy-groups:
   - name: 🚀 故障转移
     type: fallback
     proxies:
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -63,7 +63,7 @@ proxy-groups:
     proxies:
       - 💦 手动切换
       - 🔰 节点选择
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
   - name: 🌏 国内媒体
@@ -77,7 +77,7 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
   - name: "📢 谷歌FCM"
@@ -85,7 +85,7 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
   - name: Ⓜ️ 微软Bing
@@ -94,7 +94,7 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
   - name: Ⓜ️ 微软云盘
     type: select
@@ -102,14 +102,14 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
   - name: 🎮 游戏平台
@@ -117,7 +117,7 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
   - name: 📲 电报消息
@@ -125,7 +125,7 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
   - name: 🍎 苹果服务
@@ -133,7 +133,7 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
   - name: 🚅 网络测速
@@ -142,14 +142,14 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
   - name: 📹 油管视频
     type: select
     proxies:
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
   - name: 🎥 奈飞视频
@@ -158,7 +158,7 @@ proxy-groups:
       - 🔰 节点选择
       - 💦 手动切换
       - 🎥 奈飞节点
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
   - name: 📺 巴哈姆特
@@ -166,7 +166,7 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
   - name: 📺 哔哩哔哩
@@ -175,14 +175,14 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
   - name: 💬 OpenAi
     type: select
     proxies:
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
       - 🎯 全球直连
   - name: 🎶 网易音乐
@@ -193,7 +193,7 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
   - name: "🎥 奈飞节点"
     include-all: true
@@ -203,7 +203,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-  - name: 🛑 广告拦截
+  - name: 🛑 全球拦截
     type: select
     proxies:
       - REJECT
@@ -211,7 +211,7 @@ proxy-groups:
   - name: "🍃 应用净化"
     type: select
     proxies:
-      - 🛑 广告拦截
+      - 🛑 全球拦截
       - 🎯 全球直连
   - name: 🐟 漏网之鱼
     type: select
@@ -219,7 +219,7 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 💦 手动切换
-      - ♻️ Google_Cloud
+      - 🍃 Google_Cloud
       - 🌈 FreeOnline
 
 rule-providers:
@@ -481,7 +481,7 @@ rules:
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
   - "RULE-SET,自定义,🎯 全球直连"
   - "RULE-SET,UnBan,🎯 全球直连"
-  - "RULE-SET,BanAD,🛑 广告拦截"
+  - "RULE-SET,BanAD,🛑 全球拦截"
   - "RULE-SET,BanProgramAD,🍃 应用净化"
   - "RULE-SET,GoogleFCM,📢 谷歌FCM"
   - "RULE-SET,GoogleCN,🎯 全球直连"
