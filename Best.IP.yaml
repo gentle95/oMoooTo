@@ -506,15 +506,22 @@ rule-providers:
     path: ./ruleset/00_hot.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/hot.yaml"
     interval: 600
-  自定义:
+  Own_直连:
     type: http
     behavior: classical
     path: ./ruleset/00_own.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/own.yaml"
     interval: 600
+  Own_代理:
+    type: http
+    behavior: classical
+    path: ./ruleset/00_own.yaml 
+    url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/proxy.yaml"
+    interval: 600
 rules:
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
-  - "RULE-SET,自定义,🎯 全球直连"
+  - "RULE-SET,Own_直连,🎯 全球直连"
+  - "RULE-SET,Own_代理,🔰 节点选择"
   - "RULE-SET,UnBan,🎯 全球直连"
   - "RULE-SET,BanAD,🛑 全球拦截"
   - "RULE-SET,BanProgramAD,🍃 应用净化"
