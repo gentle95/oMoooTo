@@ -64,8 +64,8 @@ proxy-groups:
     type: fallback
     proxies:
       - 🍃 GoogleVless
-      - 🍁 CF_BPB
       - 🍂 FreeOnline
+      - 🍁 CF_BPB
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🐳 手动切换
