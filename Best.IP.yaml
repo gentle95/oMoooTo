@@ -515,7 +515,7 @@ rule-providers:
   Own_代理:
     type: http
     behavior: classical
-    path: ./ruleset/00_proxy.yaml 
+    path: ./ruleset/00_own_proxy.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/proxy.yaml"
     interval: 600
 rules:
