@@ -76,7 +76,7 @@ proxy-groups:
       - Google
       - CF_BPB
       - FreeOnline
-  - name: ♨ Hot
+  - name: ㊙️ HOT
     type: select
     proxies:
       - 🐳 手动切换
@@ -528,7 +528,7 @@ rules:
   - "RULE-SET,GoogleFCM,📢 谷歌FCM"
   - "RULE-SET,GoogleCN,🎯 全球直连"
   - "RULE-SET,SteamCN,🎯 全球直连"
-  - "RULE-SET,hot,♨ Hot"
+  - "RULE-SET,hot,㊙️ HOT"
   - "RULE-SET,测速,🚅 网络测速"
   - 'RULE-SET,Bing,Ⓜ️ 微软Bing'
   - 'RULE-SET,OneDrive,Ⓜ️ 微软云盘'
