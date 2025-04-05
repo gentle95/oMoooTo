@@ -1,0 +1,60 @@
+
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'tcp udp'
+	option src_dport '8006'
+	option dest_ip '192.168.1.3'
+	option dest_port '8006'
+	option name 'PVE'
+
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'tcp udp'
+	option src_dport '30000-31999'
+	option dest_ip '192.168.1.3'
+	option dest_port '30000-31999'
+	option name 'PVE.Docker'
+
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'tcp'
+	option src_dport '9900'
+	option dest_ip '192.168.1.101'
+	option dest_port '5900'
+	option name 'Loong.VNC'
+
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option dest_ip '192.168.1.101'
+	option name 'Loong.Moon'
+	option proto 'tcp udp'
+	option src_dport '47984-48010'
+	option dest_port '47984-48010'
+
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'tcp udp'
+	option src_dport '21115-21119'
+	option dest_ip '192.168.1.50'
+	option dest_port '21115-21119'
+	option name 'RustDesk'
+
+config redirect
+	option target 'DNAT'
+	option proto 'tcp udp'
+	option src_dport '50000-59999'
+	option dest_ip '192.168.1.50'
+	option dest_port '50000-59999'
+	option name 'Docker'
+	option dest 'lan'
+	option src 'wan'
