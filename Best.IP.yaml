@@ -525,8 +525,12 @@ rule-providers:
     interval: 600
 rules:
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
-  - "RULE-SET,Own_直连,🎯 全球直连"
   - "GEOIP,CLOUDFLARE,🎯 全球直连"
+  - "RULE-SET,ChinaDomain,🎯 全球直连"
+  - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
+  - "RULE-SET,Download,🎯 全球直连"
+  - "GEOIP,CN,🎯 全球直连"
+  - "RULE-SET,Own_直连,🎯 全球直连"
   - "RULE-SET,Own_代理,🔰 节点选择"
   - "RULE-SET,UnBan,🎯 全球直连"
   - "RULE-SET,BanAD,🛑 全球拦截"
@@ -556,8 +560,4 @@ rules:
   - "RULE-SET,ChinaMedia,🌏 国内媒体"
   - "RULE-SET,ProxyMedia,🌎 国外媒体"
   - "RULE-SET,ProxyGFWlist,🔰 节点选择"
-  - "RULE-SET,ChinaDomain,🎯 全球直连"
-  - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
-  - "RULE-SET,Download,🎯 全球直连"
-  - "GEOIP,CN,🎯 全球直连"
   - "MATCH,🐟 漏网之鱼"
