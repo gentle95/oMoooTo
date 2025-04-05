@@ -10,11 +10,11 @@ payload:
   - DOMAIN-SUFFIX,51zmt.top
   - DOMAIN-SUFFIX,hulizhushou.com
   - DOMAIN-SUFFIX,jd.com
-#  - DOMAIN-SUFFIX,cloudflare.com
-#  - DOMAIN-SUFFIX,cloudflare-cn.com
-#  - DOMAIN-KEYWORD,cloudflare
-#  - DOMAIN-SUFFIX,cloudflarestatus.com
-#  - DOMAIN-SUFFIX,workers.dev
+  - DOMAIN-SUFFIX,cloudflare.com
+  - DOMAIN-SUFFIX,cloudflare-cn.com
+  - DOMAIN-KEYWORD,cloudflare
+  - DOMAIN-SUFFIX,cloudflarestatus.com
+  - DOMAIN-SUFFIX,workers.dev
   - DOMAIN-SUFFIX,docker.xiaoya.pro
   - DOMAIN-SUFFIX,gitlab.com
   - DOMAIN-SUFFIX,quark.com
