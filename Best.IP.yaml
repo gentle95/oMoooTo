@@ -7,7 +7,7 @@ proxy-providers:
   Google:
     type: http
     url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/0286c98ea86e1e7f34050b023bdb918c/raw/Vless"
-    path: ./googlevless.yaml
+    path: ./proxy/googlevless.yaml
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
@@ -15,7 +15,7 @@ proxy-providers:
   FreeOnline:
     type: http
     url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/d03f3566f71e77c14f292f66013002e0/raw/all.yaml"
-    path: ./freeonline.yaml
+    path: ./proxy/freeonline.yaml
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
@@ -23,7 +23,7 @@ proxy-providers:
   CF_BPB:
     type: http
     url: "https://own.ddxm.pp.ua/sub/ce8b5bb9-bff8-41bb-977b-19d2f58c089d#BPB-Normal"
-    path: ./CF_BPB.yaml
+    path: ./proxy/CF_BPB.yaml
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
