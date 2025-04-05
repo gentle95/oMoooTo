@@ -1,4 +1,4 @@
-external-controller: 0.0.0.0:9090
+external-controller: [::]:9090
 secret: "zrszyx"
 external-ui: ui
 external-ui-name: meta
