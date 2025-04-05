@@ -525,7 +525,7 @@ rule-providers:
     interval: 600
 rules:
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
-  - "GEOIP,CLOUDFLARE,🎯 全球直连"
+#  - "GEOIP,CLOUDFLARE,🎯 全球直连"
   - "RULE-SET,ChinaDomain,🎯 全球直连"
   - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
   - "RULE-SET,Download,🎯 全球直连"
