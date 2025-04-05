@@ -238,20 +238,24 @@ proxy-groups:
     include-all: true
     filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
     type: select
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚫 全球拦截
+  - name: "🍃 应用净化"
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚫 全球拦截
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
-  - name: 🛑 全球拦截
+  - name: 🚫 全球拦截
     type: select
     proxies:
       - REJECT
-      - 🎯 全球直连
-  - name: "🍃 应用净化"
-    type: select
-    proxies:
-      - 🛑 全球拦截
-      - 🎯 全球直连
   - name: 🐟 漏网之鱼
     type: select
     proxies:
@@ -533,7 +537,7 @@ rules:
   - "RULE-SET,Own_直连,🎯 全球直连"
   - "RULE-SET,Own_代理,🔰 节点选择"
   - "RULE-SET,UnBan,🎯 全球直连"
-  - "RULE-SET,BanAD,🛑 全球拦截"
+  - "RULE-SET,BanAD,🛑 广告拦截"
   - "RULE-SET,BanProgramAD,🍃 应用净化"
   - "RULE-SET,GoogleFCM,📢 谷歌FCM"
   - "RULE-SET,GoogleCN,🎯 全球直连"
