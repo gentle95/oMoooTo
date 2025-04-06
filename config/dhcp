@@ -223,6 +223,12 @@ config host
 	list mac '38:2C:E5:35:5B:AE'
 
 config host
+        option dns '1'
+        option mac '50:13:95:44:5C:FD'
+        option ip '192.168.1.86'
+        option name 'HX75_WiFi'
+        
+config host
 	option name 'K3o1'
 	option dns '1'
 	option mac 'D8:C8:E9:97:9A:E8'
