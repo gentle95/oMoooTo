@@ -511,25 +511,25 @@ rule-providers:
     behavior: classical
     path: ./ruleset/00_speed.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.yaml"
-    interval: 600
+    interval: 86400
   hot:
     type: http
     behavior: classical
     path: ./ruleset/00_hot.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/hot.yaml"
-    interval: 600
+    interval: 86400
   Own_直连:
     type: http
     behavior: classical
     path: ./ruleset/00_own.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/own.yaml"
-    interval: 600
+    interval: 86400
   Own_代理:
     type: http
     behavior: classical
     path: ./ruleset/00_own_proxy.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/proxy.yaml"
-    interval: 600
+    interval: 86400
 rules:
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
 #  - "GEOIP,CLOUDFLARE,🎯 全球直连"
