@@ -8,7 +8,7 @@ proxy-providers:
     type: http
     url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/0286c98ea86e1e7f34050b023bdb918c/raw/Vless"
     path: ./proxy/googlevless.yaml
-    interval: 86400
+    interval: 21600
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
@@ -17,7 +17,7 @@ proxy-providers:
     type: http
     url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/d03f3566f71e77c14f292f66013002e0/raw/all.yaml"
     path: ./proxy/freeonline.yaml
-    interval: 86400
+    interval: 21600
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
@@ -26,7 +26,7 @@ proxy-providers:
     type: http
     url: "https://own.ddxm.pp.ua/sub/ce8b5bb9-bff8-41bb-977b-19d2f58c089d#BPB-Normal"
     path: ./proxy/CF_BPB.yaml
-    interval: 86400
+    interval: 21600
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
