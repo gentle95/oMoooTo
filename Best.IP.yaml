@@ -42,6 +42,14 @@ proxy-groups:
       - 🍂 FreeOnline
       - 🐳 手动切换
       - 🎯 全球直连
+  - name: 🐳 手动切换
+    type: select
+    proxies:
+      - 🎯 全球直连
+    use:
+      - Google
+      - CF_BPB
+      - FreeOnline
   - name: 🍀 自动切换
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -50,6 +58,15 @@ proxy-groups:
       - Google
       - CF_BPB
       - FreeOnline
+  - name: ㊙️ HOT
+    type: select
+    proxies:
+      - 🐳 手动切换
+      - 🔰 节点选择
+      - 🍃 GoogleVless
+      - 🍁 CF_BPB
+      - 🍂 FreeOnline
+      - 🎯 全球直连
   - name: 🍃 GoogleVless
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -76,23 +93,6 @@ proxy-groups:
       - 🍁 CF_BPB
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: 🐳 手动切换
-    type: select
-    proxies:
-      - 🎯 全球直连
-    use:
-      - Google
-      - CF_BPB
-      - FreeOnline
-  - name: ㊙️ HOT
-    type: select
-    proxies:
-      - 🐳 手动切换
-      - 🔰 节点选择
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
-      - 🎯 全球直连
   - name: 🌏 国内媒体
     type: select
     proxies:
