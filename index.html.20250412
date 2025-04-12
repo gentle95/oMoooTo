@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>愤怒de馒头</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="logo">oMoooTo</div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#services">服务</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="gradient-text">欢迎来到未来科技</h1>
+            <p>探索数字世界的无限可能</p>
+            <button class="glow-btn">立即体验</button>
+        </div>
+    </section>
+
+    <div class="card-container">
+        <div class="card">
+            <i class="fas fa-rocket"></i>
+            <h3>极速性能</h3>
+            <p>搭载最新量子计算技术</p>
+            <div class="shine"></div>
+        </div>
+        <div class="card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>安全防护</h3>
+            <p>区块链级别安全保障</p>
+            <div class="shine"></div>
+        </div>
+        <div class="card">
+            <i class="fas fa-brain"></i>
+            <h3>人工智能</h3>
+            <p>深度学习神经网络系统</p>
+            <div class="shine"></div>
+        </div>
+    </div>
+
+    <div class="cyber-line"></div>
+</body>
+</html>
