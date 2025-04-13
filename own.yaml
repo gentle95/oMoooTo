@@ -24,6 +24,7 @@ payload:
   - DOMAIN-KEYWORD,tmall
   - DOMAIN-KEYWORD,vmall
   - DOMAIN-KEYWORD,deepseek
+  - SRC-IP-CIDR,192.168.1.49/32     #FnOS
   - SRC-IP-CIDR,192.168.1.50/32     #Docker
   - SRC-IP-CIDR,192.168.1.51/32     #美的空调_客厅
   - SRC-IP-CIDR,192.168.1.52/32     #美的空调_主卧
