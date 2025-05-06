@@ -117,15 +117,6 @@ proxy-groups:
       - 🍁 CF_BPB
       - 🍂 FreeOnline
       - 🎯 全球直连
-  - name: 🐈‍⬛ Github
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
-      - 🎯 全球直连
   - name: Ⓜ️ 微软Bing
     type: select
     proxies:
@@ -557,7 +548,7 @@ rules:
   - "RULE-SET,Own_直连,🎯 全球直连"
   - "RULE-SET,Own_代理,🔰 节点选择"
   - "RULE-SET,UnBan,🎯 全球直连"
-  - "RULE-SET,Github,🐈‍⬛ Github"
+#  - "RULE-SET,Github,🐈‍⬛ Github"
   - "RULE-SET,BanAD,🛑 广告拦截"
   - "RULE-SET,BanProgramAD,🍃 应用净化"
   - "RULE-SET,GoogleFCM,📢 谷歌FCM"
