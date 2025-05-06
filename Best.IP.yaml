@@ -24,7 +24,7 @@ proxy-providers:
       interval: 300
   CF_BPB:
     type: http
-    url: "https://ooo.ddxm.pp.ua/sub/normal/ce8b5bb9-bff8-41bb-977b-19d2f58c089d#BPB-Normal"
+    url: "https://ooo.ddxm.pp.ua/sub/normal/ce8b5bb9-bff8-41bb-977b-19d2f58c089d#%F0%9F%92%A6%20BPB%20Normal"
     path: ./proxy/CF_BPB.yaml
     interval: 21600
     health-check:
