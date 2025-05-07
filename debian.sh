@@ -1,0 +1,109 @@
+#!/bin/bash
+tee /etc/apt/sources.list.d/debian.sources <<EOF
+Types: deb
+URIs: https://mirrors.ustc.edu.cn/debian
+Suites: bookworm bookworm-updates bookworm-backports
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: https://mirrors.ustc.edu.cn/debian-security
+Suites: bookworm-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+EOF
+
+apt update -y
+apt install -y openssh-server locales curl wget cloud-guest-utils qemu-guest-agent
+sed -i 's/# zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/g' /etc/locale.gen
+locale-gen
+dpkg-reconfigure --frontend=noninteractive locales
+systemctl enable --now qemu-guest-agent
+
+tee /root/.ssh/id_rsa <<EOF
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+-----END OPENSSH PRIVATE KEY-----
+EOF
+
+tee /root/.ssh/authorized_keys <<EOF
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCrmbN/IovMJALv+MIbXbAqC/1Ol2VTfuOQ2PD7/dD3qo21/2j7NpJwIFJDbY/290YSc3BlKbf6L+pAUDwpj6i2XcDVCRdMHEGWbPaJ5qpmxi/WvGw5CR7QxVQt+8DGEK8Q6IUlRDw90w6avrwBG2Z2I5oN2qKUujt5jMrdT9/hmLKK525Mwf/mR0Bnm4C3nMGsZVb/KVaCHIUBfOOmCW6dH9zVgLZoScqvOP8YQ+My+i2ULVDSU6KU5qr9EajF/Ibzw8AblxSKzr43UqirIyP1bYPb+FN0TJzH8JFzTSYQgA3BNnYK787xaPbXNxcsEqD4fSWguPnAaypq+GgM2MOaXcbZe8SRx1ScmxKkSnN1v4KI+xDw2tnlxXFFUBBbudVLvj65oEe5g6WeWKHRoBCE0hbbfexwF251z8jn6oeO//STKHYKQ+RIyENfBjA6RLigEmt2m1z6VqDq6bqZ2HJyKfPjxoRn2At3t+35wTYkx7uWRni0t+RH409ciyjIBlaSbUbmcy1GB5Xc5QewiiBXAb2WanMnctGJRZQga/7gmyKJ67onsOVkqaHNlzqNBCmbhOO8BUDjZ/c439KbHrBXto1tfRsVqb0zh9/tW4GAjZTxxz9aO/G8I5ag4Pumbab63OshFbTbPNd2ksOFLYQxtzZ3RZXCdJHTTdCSNaQyrQ== loong@msn.cn
+EOF
+
+tee /root/.ssh/id_rsa.pub <<EOF
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCrmbN/IovMJALv+MIbXbAqC/1Ol2VTfuOQ2PD7/dD3qo21/2j7NpJwIFJDbY/290YSc3BlKbf6L+pAUDwpj6i2XcDVCRdMHEGWbPaJ5qpmxi/WvGw5CR7QxVQt+8DGEK8Q6IUlRDw90w6avrwBG2Z2I5oN2qKUujt5jMrdT9/hmLKK525Mwf/mR0Bnm4C3nMGsZVb/KVaCHIUBfOOmCW6dH9zVgLZoScqvOP8YQ+My+i2ULVDSU6KU5qr9EajF/Ibzw8AblxSKzr43UqirIyP1bYPb+FN0TJzH8JFzTSYQgA3BNnYK787xaPbXNxcsEqD4fSWguPnAaypq+GgM2MOaXcbZe8SRx1ScmxKkSnN1v4KI+xDw2tnlxXFFUBBbudVLvj65oEe5g6WeWKHRoBCE0hbbfexwF251z8jn6oeO//STKHYKQ+RIyENfBjA6RLigEmt2m1z6VqDq6bqZ2HJyKfPjxoRn2At3t+35wTYkx7uWRni0t+RH409ciyjIBlaSbUbmcy1GB5Xc5QewiiBXAb2WanMnctGJRZQga/7gmyKJ67onsOVkqaHNlzqNBCmbhOO8BUDjZ/c439KbHrBXto1tfRsVqb0zh9/tW4GAjZTxxz9aO/G8I5ag4Pumbab63OshFbTbPNd2ksOFLYQxtzZ3RZXCdJHTTdCSNaQyrQ== loong@msn.cn
+EOF
+
+chmod 600 /root/.ssh/*
+
+tee /etc/systemd/network/10-enp6s18.network <<EOF
+[Match]
+Name=enp6s18
+
+[Network]
+DHCP=ipv4
+IPv6AcceptRA=yes
+
+[DHCPv4]
+RouteMetric=1
+
+[IPv6AcceptRA]
+DHCPv6=no
+RouteMetric=1
+EOF
+
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+# sed -i 's/# zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/g' /etc/locale.gen
+
+tee /etc/default/locale <<EOF
+LANG="zh_CN.UTF-8"
+LANGUAGE="zh_CN:zh"
+EOF
+
+growpart /dev/sda 1
