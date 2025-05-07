@@ -1,3 +1,4 @@
 payload:
   - DOMAIN-SUFFIX,caddyserver.com
   - DOMAIN-SUFFIX,security.debian.org
+  - DOMAIN-SUFFIX,bitwarden.com
