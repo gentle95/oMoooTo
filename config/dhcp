@@ -24,6 +24,12 @@ config host
 	option name 'XPoU8'
 
 config host
+	option dns '1'
+	option ip '192.168.1.48'
+	option name 'Mihomo'
+	list mac 'BC:24:11:B5:12:23'
+
+config host
         option dns '1'
         option ip '192.168.1.49'
         option name 'FnOS'
