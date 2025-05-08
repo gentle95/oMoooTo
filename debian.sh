@@ -97,7 +97,7 @@ DHCPv6=no
 RouteMetric=1
 EOF
 
-tee /etc/systemd/network/00-enp6s19.network <<EOF
+tee /etc/systemd/network/02-enp6s19.network <<EOF
 [Match]
 Name=enp6s19
 
