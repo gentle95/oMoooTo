@@ -17,7 +17,6 @@ apt update -y
 apt install -y openssh-server locales curl wget cloud-guest-utils qemu-guest-agent net-tools
 sed -i 's/# zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/g' /etc/locale.gen
 locale-gen
-dpkg-reconfigure --frontend=noninteractive locales
 systemctl enable --now qemu-guest-agent
 
 tee /root/.ssh/id_rsa <<EOF
@@ -99,7 +98,6 @@ RouteMetric=1
 EOF
 
 sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
-# sed -i 's/# zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/g' /etc/locale.gen
 
 tee /etc/default/locale <<EOF
 LANG="zh_CN.UTF-8"
