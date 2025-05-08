@@ -82,7 +82,7 @@ EOF
 
 chmod 600 /root/.ssh/*
 
-tee /etc/systemd/network/10-enp6s18.network <<EOF
+tee /etc/systemd/network/01-enp6s18.network <<EOF
 [Match]
 Name=enp6s18
 
