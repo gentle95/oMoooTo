@@ -97,6 +97,27 @@ DHCPv6=no
 RouteMetric=1
 EOF
 
+tee /etc/systemd/network/00-enp6s19.network <<EOF
+[Match]
+Name=enp6s19
+
+[Network]
+DHCP=yes
+LinkLocalAddressing=no
+IPv6AcceptRA=no
+
+[Link]
+MACAddress=ac:4a:fe:6e:b2:49
+
+[DHCPv4]
+RouteMetric=100
+ClientIdentifier=mac
+VendorClassIdentifier=SCITV
+Hostname=00109199010290600010AC4AFE6EB249
+# 手动指定请求的 DHCP 参数列表（选项 55）
+SendOption=55:1,3,6,15,28,31,33
+EOF
+
 sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
 tee /etc/default/locale <<EOF
