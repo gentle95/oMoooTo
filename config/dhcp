@@ -518,3 +518,8 @@ config host
 	list mac 'BC:24:11:D6:B5:53'
 	option ip '192.168.1.139'
 
+config host
+	option name 'MotoX'
+	list mac '38:30:35:35:4B:55'
+	option ip '192.168.1.140'
+
