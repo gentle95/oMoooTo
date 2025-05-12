@@ -581,9 +581,9 @@ rules:
 geodata-mode: true
 geodata-loader: standard
 geox-url:
-  geosite: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
-  mmdb: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb
-  geoip: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
-  asn: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
+  geosite: https://git.ddxm.pp.ua/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat
+  mmdb: https://git.ddxm.pp.ua/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.metadb
+  geoip: https://git.ddxm.pp.ua/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat
+  asn: https://git.ddxm.pp.ua/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/GeoLite2-ASN.mmdb
 geo-auto-update: true
 geo-update-interval: 24
