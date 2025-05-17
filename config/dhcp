@@ -284,6 +284,7 @@ config host
 	option name 'LoongPC'
 	option ip '192.168.1.101'
 	list mac '8C:0E:60:67:9B:90'
+	list tag 'out'
 
 config host
 	option ip '192.168.1.102'
