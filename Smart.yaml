@@ -41,6 +41,7 @@ proxy-groups:
       - 🍃 GoogleVless
       - 🍁 CF_BPB
       - 🍂 FreeOnline
+      - ♻️ Smart智能
       - ♻️ Google智能
       - ♻️ Free智能
       - 🐳 手动切换
@@ -103,6 +104,15 @@ proxy-groups:
       - ♻️ Free智能
     url: http://www.gstatic.com/generate_204
     interval: 300
+  - name: ♻️ Smart智能
+    type: smart
+    uselightgbm: true
+    collectdata: false
+    strategy: sticky-sessions
+    interval: 300
+    use:
+      - Google
+      - FreeOnline
   - name: ♻️ Google智能
     type: smart
     uselightgbm: true
