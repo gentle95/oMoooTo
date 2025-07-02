@@ -37,9 +37,12 @@ proxy-groups:
     proxies:
       - 🍀 自动切换
       - 💱 故障转移
+      - ♻️ 智能转移
       - 🍃 GoogleVless
       - 🍁 CF_BPB
       - 🍂 FreeOnline
+      - ♻️ Google智能
+      - ♻️ Free智能
       - 🐳 手动切换
       - 🎯 全球直连
   - name: 🐳 手动切换
@@ -93,6 +96,29 @@ proxy-groups:
       - 🍁 CF_BPB
     url: http://www.gstatic.com/generate_204
     interval: 300
+  - name: ♻️ 智能转移
+    type: fallback
+    proxies:
+      - ♻️ Google智能
+      - ♻️ Free智能
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: ♻️ Google智能
+    type: smart
+    uselightgbm: true
+    collectdata: false
+    strategy: sticky-sessions
+    interval: 300
+    use:
+      - Google
+  - name: ♻️ Free智能
+    type: smart
+    uselightgbm: true
+    collectdata: false
+    strategy: sticky-sessions
+    interval: 300
+    use:
+      - FreeOnline
   - name: 🌏 国内媒体
     type: select
     proxies:
