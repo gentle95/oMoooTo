@@ -239,6 +239,12 @@ config host
         option mac '50:13:95:44:5C:FD'
         option ip '192.168.1.86'
         option name 'HX75_WiFi'
+
+config host
+        option dns '1'
+        option mac '98:D8:63:29:D8:00'
+        option ip '192.168.1.87'
+        option name 'NVCoCW'
         
 config host
 	option name 'K3o1'
