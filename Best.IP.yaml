@@ -4,15 +4,6 @@ external-ui: ui
 external-ui-name: meta
 external-ui-url: "https://git.ddxm.pp.ua/github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"
 proxy-providers:
-  Google:
-    type: http
-    url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/0286c98ea86e1e7f34050b023bdb918c/raw/Vless"
-    path: ./proxy/googlevless.yaml
-    interval: 21600
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
   FreeOnline:
     type: http
     url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/d03f3566f71e77c14f292f66013002e0/raw/all.yaml"
@@ -37,7 +28,6 @@ proxy-groups:
     proxies:
       - 🍀 自动切换
       - 💱 故障转移
-      - 🍃 GoogleVless
       - 🍁 CF_BPB
       - 🍂 FreeOnline
       - 🐳 手动切换
@@ -46,8 +36,8 @@ proxy-groups:
     type: select
     proxies:
       - 🎯 全球直连
+      - 🔰 节点选择
     use:
-      - Google
       - CF_BPB
       - FreeOnline
   - name: 🍀 自动切换
@@ -55,7 +45,6 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
-      - Google
       - CF_BPB
       - FreeOnline
   - name: ㊙️ HOT
@@ -63,16 +52,9 @@ proxy-groups:
     proxies:
       - 🐳 手动切换
       - 🔰 节点选择
-      - 🍃 GoogleVless
       - 🍁 CF_BPB
       - 🍂 FreeOnline
       - 🎯 全球直连
-  - name: 🍃 GoogleVless
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    use:
-      - Google
   - name: 🍁 CF_BPB
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -88,7 +70,6 @@ proxy-groups:
   - name: 💱 故障转移
     type: fallback
     proxies:
-      - 🍃 GoogleVless
       - 🍂 FreeOnline
       - 🍁 CF_BPB
     url: http://www.gstatic.com/generate_204
@@ -104,18 +85,12 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🎯 全球直连
   - name: "📢 谷歌FCM"
     type: select
     proxies:
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🎯 全球直连
   - name: Ⓜ️ 微软Bing
     type: select
@@ -123,53 +98,35 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
   - name: Ⓜ️ 微软云盘
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🎯 全球直连
   - name: 🎮 游戏平台
     type: select
     proxies:
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🎯 全球直连
   - name: 📲 电报消息
     type: select
     proxies:
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🎯 全球直连
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🎯 全球直连
   - name: 🚅 网络测速
     type: select
@@ -177,17 +134,11 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
   - name: 📹 油管视频
     type: select
     proxies:
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🎯 全球直连
   - name: 🎥 奈飞视频
     type: select
@@ -195,18 +146,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🐳 手动切换
       - 🎥 奈飞节点
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🎯 全球直连
   - name: 📺 巴哈姆特
     type: select
     proxies:
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🎯 全球直连
   - name: 📺 哔哩哔哩
     type: select
@@ -214,17 +159,11 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
   - name: 💬 OpenAi
     type: select
     proxies:
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🎯 全球直连
   - name: 🎶 网易音乐
     type: select
@@ -234,9 +173,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
   - name: "🎥 奈飞节点"
     include-all: true
     filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
@@ -265,9 +201,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🐳 手动切换
-      - 🍃 GoogleVless
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
 
 rule-providers:
   LocalAreaNetwork:
