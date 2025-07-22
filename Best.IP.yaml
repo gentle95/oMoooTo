@@ -36,7 +36,6 @@ proxy-groups:
     type: select
     proxies:
       - 🎯 全球直连
-      - 🔰 节点选择
     use:
       - CF_BPB
       - FreeOnline
