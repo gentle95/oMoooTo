@@ -36,6 +36,8 @@ proxy-groups:
     type: select
     proxies:
       - 🎯 全球直连
+      - 🍁 CF_BPB
+      - 🍂 FreeOnline
     use:
       - CF_BPB
       - FreeOnline
