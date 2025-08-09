@@ -39,9 +39,9 @@ proxy-groups:
       - 🍁 CF_BPB
       - 🍂 FreeOnline
       - 🇭🇰 香港节点
-      - 🇹🇼 台湾节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
+      - 🇹🇼 台湾节点
       - 🇺🇸 美国节点
     use:
       - CF_BPB
