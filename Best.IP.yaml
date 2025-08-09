@@ -29,7 +29,6 @@ proxy-groups:
       - 🍀 自动切换
       - 💱 故障转移
       - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🐳 手动切换
       - 🎯 全球直连
   - name: 🐳 手动切换
@@ -37,12 +36,12 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇹🇼 台湾节点
       - 🇺🇸 美国节点
+      - 🏳️‍🌈 其它节点
     use:
       - CF_BPB
       - FreeOnline
@@ -58,8 +57,6 @@ proxy-groups:
     proxies:
       - 🐳 手动切换
       - 🔰 节点选择
-      - 🍁 CF_BPB
-      - 🍂 FreeOnline
       - 🎯 全球直连
   - name: 🍁 CF_BPB
     type: url-test
