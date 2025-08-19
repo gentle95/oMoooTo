@@ -6,7 +6,8 @@ external-ui-url: "https://git.ddxm.pp.ua/github.com/Zephyruso/zashboard/archive/
 proxy-providers:
   FreeOnline:
     type: http
-    url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/d03f3566f71e77c14f292f66013002e0/raw/all.yaml"
+    # url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/d03f3566f71e77c14f292f66013002e0/raw/all.yaml"
+    url: "https://check.ddxm.pp.ua/gist?key=all.yaml&token=wZAkFG8yd5A424o7"
     path: ./proxy/freeonline.yaml
     interval: 21600
     health-check:
