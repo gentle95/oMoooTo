@@ -27,7 +27,8 @@ proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
-      - ♾️ 故障转移
+      - ♾️ 故障转移🅰️
+      - ♾️ 故障转移🅱️
       - 🍀 自动切换
       - 🐳 手动切换
       - 🎯 全球直连
@@ -68,7 +69,7 @@ proxy-groups:
     interval: 300
     use:
       - FreeOnline
-  - name: ♾️ 故障转移
+  - name: ♾️ 故障转移🅰️
     type: fallback
     proxies:
       - 🇭🇰 香港节点
@@ -76,6 +77,18 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇹🇼 台湾节点
       - 🇺🇸 美国节点
+      - 🍁 CF_BPB
+      - 🏳️‍🌈 其它节点
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: ♾️ 故障转移🅱️
+    type: fallback
+    proxies:
+      - 🇺🇸 美国节点
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇹🇼 台湾节点
       - 🍁 CF_BPB
       - 🏳️‍🌈 其它节点
     url: http://www.gstatic.com/generate_204
