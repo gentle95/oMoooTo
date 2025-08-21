@@ -36,6 +36,8 @@ proxy-groups:
     type: select
     proxies:
       - 🎯 全球直连
+      - ♾️ 故障转移🅰️
+      - ♾️ 故障转移🅱️
       - 🍁 CF_BPB
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
