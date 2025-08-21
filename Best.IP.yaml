@@ -85,11 +85,11 @@ proxy-groups:
     type: fallback
     proxies:
       - 🇺🇸 美国节点
+      - 🍁 CF_BPB
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇹🇼 台湾节点
-      - 🍁 CF_BPB
       - 🏳️‍🌈 其它节点
     url: http://www.gstatic.com/generate_204
     interval: 300
