@@ -125,4 +125,6 @@ LANG="zh_CN.UTF-8"
 LANGUAGE="zh_CN:zh"
 EOF
 
+hostnamectl set-hostname Debian
+
 growpart /dev/sda 1
