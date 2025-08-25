@@ -2,13 +2,13 @@
 tee /etc/apt/sources.list.d/debian.sources <<EOF
 Types: deb
 URIs: https://mirrors.nju.edu.cn/debian
-Suites: bookworm bookworm-updates bookworm-backports
+Suites: trixie trixie-updates trixie-backports
 Components: main contrib non-free non-free-firmware
 Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
 Types: deb
 URIs: https://mirrors.nju.edu.cn/debian-security
-Suites: bookworm-security
+Suites: trixie-security
 Components: main contrib non-free non-free-firmware
 Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 EOF
@@ -81,9 +81,9 @@ EOF
 
 chmod 600 /root/.ssh/*
 
-tee /etc/systemd/network/01-enp6s18.network <<EOF
+tee /etc/systemd/network/01-ens18.network <<EOF
 [Match]
-Name=enp6s18
+Name=ens18
 
 [Network]
 DHCP=ipv4
@@ -97,9 +97,9 @@ DHCPv6=no
 RouteMetric=1
 EOF
 
-tee /etc/systemd/network/02-enp6s19.network <<EOF
+tee /etc/systemd/network/02-ens19.network <<EOF
 [Match]
-Name=enp6s19
+Name=ens19
 
 [Network]
 DHCP=yes
