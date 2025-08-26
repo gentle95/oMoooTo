@@ -1,13 +1,13 @@
 #!/bin/bash
 tee /etc/apt/sources.list.d/debian.sources <<EOF
 Types: deb
-URIs: https://mirrors.nju.edu.cn/debian
+URIs: https://mirrors.ustc.edu.cn/debian
 Suites: trixie trixie-updates trixie-backports
 Components: main contrib non-free non-free-firmware
 Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
 Types: deb
-URIs: https://mirrors.nju.edu.cn/debian-security
+URIs: https://mirrors.ustc.edu.cn/debian-security
 Suites: trixie-security
 Components: main contrib non-free non-free-firmware
 Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
