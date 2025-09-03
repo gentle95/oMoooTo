@@ -1,6 +1,7 @@
 https://sub.ddxm.pp.ua/ce8b5bb9-bff8-41bb-977b-19d2f58c089d?b64
 https://proxypool.link/clash/proxies
 https://sub.0664.net/clash/proxies
+https://raw.githubusercontent.com/free-nodes/clashfree/refs/heads/main/clash.yml
 https://clashgithub.com/wp-content/uploads/rss/{Ymd}.yml
 https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml
 https://raw.githubusercontent.com/Q3dlaXpoaQ/V2rayN_Clash_Node_Getter/refs/heads/main/APIs/sc0.yaml
