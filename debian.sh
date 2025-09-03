@@ -126,5 +126,5 @@ LANGUAGE="zh_CN:zh"
 EOF
 
 hostnamectl set-hostname Debian
-
+timedatectl set-timezone Asia/Shanghai
 growpart /dev/sda 1
