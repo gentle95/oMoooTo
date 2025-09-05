@@ -14,6 +14,15 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
+  CF_BPB:
+    type: http
+    url: "https://oko.ddxm.pp.ua/sub/normal/ce8b5bb9-bff8-41bb-977b-19d2f58c089d#%F0%9F%92%A6%20BPB%20Normal"
+    path: ./proxy/CF_BPB.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -29,6 +38,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♾️ 故障转移🅰️
       - ♾️ 故障转移🅱️
+      - 🍁 CF_BPB
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
@@ -36,6 +46,7 @@ proxy-groups:
       - 🇺🇸 美国节点
       - 🏳️‍🌈 其它节点
     use:
+      - CF_BPB
       - FreeOnline
   - name: 🍀 自动切换
     type: url-test
@@ -48,6 +59,12 @@ proxy-groups:
       - 🐳 手动切换
       - 🔰 节点选择
       - 🎯 全球直连
+  - name: 🍁 CF_BPB
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - CF_BPB
   - name: 🍂 FreeOnline
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -62,6 +79,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇹🇼 台湾节点
       - 🇺🇸 美国节点
+      - 🍁 CF_BPB
       - 🏳️‍🌈 其它节点
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -69,11 +87,12 @@ proxy-groups:
     type: fallback
     proxies:
       - 🇺🇸 美国节点
-      - 🏳️‍🌈 其它节点
+      - 🍁 CF_BPB
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇹🇼 台湾节点
+      - 🏳️‍🌈 其它节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🇭🇰 香港节点
