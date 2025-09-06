@@ -14,6 +14,15 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
+  CF_BPB:
+    type: http
+    url: "https://oko.ddxm.pp.ua/sub/normal/ce8b5bb9-bff8-41bb-977b-19d2f58c089d#%F0%9F%92%A6%20BPB%20Normal"
+    path: ./proxy/CF_BPB.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -29,6 +38,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♾️ 故障转移🅰️
       - ♾️ 故障转移🅱️
+      - 🍁 CF_BPB
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
@@ -36,6 +46,7 @@ proxy-groups:
       - 🇺🇸 美国节点
       - 🏳️‍🌈 其它节点
     use:
+      - CF_BPB
       - FreeOnline
   - name: 🍀 自动切换
     type: url-test
@@ -48,6 +59,18 @@ proxy-groups:
       - 🐳 手动切换
       - 🔰 节点选择
       - 🎯 全球直连
+  - name: 🍁 CF_BPB
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - CF_BPB
+  - name: 🍂 FreeOnline
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - FreeOnline
   - name: ♾️ 故障转移🅰️
     type: fallback
     proxies:
@@ -56,6 +79,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇹🇼 台湾节点
       - 🇺🇸 美国节点
+      - 🍁 CF_BPB
       - 🏳️‍🌈 其它节点
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -64,6 +88,7 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国节点
       - 🏳️‍🌈 其它节点
+      - 🍁 CF_BPB
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
@@ -96,16 +121,11 @@ proxy-groups:
     type: url-test
     interval: 300
   - name: 🏳️‍🌈 其它节点
-    include-all: true
+    use:
+      - FreeOnline
     exclude-filter: (?i)新加坡|坡|狮城|SG|Singapore|港|HK|hk|Hong Kong|HongKong|hongkong|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|台|新北|彰化|TW|Taiwan|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
     type: url-test
     interval: 300
-  - name: 🍂 FreeOnline
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    use:
-      - FreeOnline
   - name: 🌏 国内媒体
     type: select
     proxies:
