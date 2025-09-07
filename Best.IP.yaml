@@ -23,6 +23,15 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
+  Hold:
+    type: http
+    url: "https://d.ddx2013.cc:58199/sub/hold.yaml"
+    path: ./proxy/Hold.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
 proxy-groups:
   - name: 🔰 节点选择
     type: select
