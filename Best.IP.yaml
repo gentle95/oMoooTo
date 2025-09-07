@@ -25,7 +25,7 @@ proxy-providers:
       interval: 300
   Hold:
     type: http
-    url: "https://d.ddx2013.cc:58199/sub/hold.yaml"
+    url: "https://d.ddx2013.cc:53001/Xvn47M4QzvZXgn65/download/hold?target=ClashMeta"
     path: ./proxy/Hold.yaml
     interval: 7200
     health-check:
