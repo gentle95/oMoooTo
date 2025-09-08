@@ -39,7 +39,7 @@ proxy-groups:
     proxies:
       - ♾️ 故障转移🅰️
       - ♾️ 故障转移🅱️
-      - ♾️ 故障转移🆑
+      - ♾️ 故障转移🅾️
       - 🐳 手动切换
       - 🎯 全球直连
   - name: 🐳 手动切换
@@ -48,7 +48,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♾️ 故障转移🅰️
       - ♾️ 故障转移🅱️
-      - ♾️ 故障转移🆑
+      - ♾️ 故障转移🅾️
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
@@ -98,7 +98,7 @@ proxy-groups:
       - 🍁 CF_BPB
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: ♾️ 故障转移🆑
+  - name: ♾️ 故障转移🅾️
     type: fallback
     proxies:
       - 🇺🇸 美国节点
