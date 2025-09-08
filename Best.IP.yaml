@@ -39,7 +39,7 @@ proxy-groups:
     proxies:
       - ♾️ 故障转移🅰️
       - ♾️ 故障转移🅱️
-      - 🍀 自动切换
+      - ♾️ 故障转移🆑
       - 🐳 手动切换
       - 🎯 全球直连
   - name: 🐳 手动切换
@@ -48,7 +48,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♾️ 故障转移🅰️
       - ♾️ 故障转移🅱️
-      - 🍁 CF_BPB
+      - ♾️ 故障转移🆑
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
@@ -56,17 +56,6 @@ proxy-groups:
       - 🇺🇸 美国节点
       - 🏳️‍🌈 其它节点
     include-all: true
-  - name: 🍀 自动切换
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    include-all: true
-  - name: ㊙️ HOT
-    type: select
-    proxies:
-      - 🐳 手动切换
-      - 🔰 节点选择
-      - 🎯 全球直连
   - name: 🍁 CF_BPB
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -79,7 +68,25 @@ proxy-groups:
     interval: 300
     use:
       - FreeOnline
+  - name: ㊙️ HOT
+    type: select
+    proxies:
+      - 🐳 手动切换
+      - 🔰 节点选择
+      - 🎯 全球直连
   - name: ♾️ 故障转移🅰️
+    type: fallback
+    proxies:
+      - 🍁 CF_BPB
+      - 🇺🇸 美国节点
+      - 🏳️‍🌈 其它节点
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇹🇼 台湾节点
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: ♾️ 故障转移🅱️
     type: fallback
     proxies:
       - 🇭🇰 香港节点
@@ -87,11 +94,11 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇹🇼 台湾节点
       - 🇺🇸 美国节点
-      - 🍁 CF_BPB
       - 🏳️‍🌈 其它节点
+      - 🍁 CF_BPB
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: ♾️ 故障转移🅱️
+  - name: ♾️ 故障转移🆑
     type: fallback
     proxies:
       - 🇺🇸 美国节点
