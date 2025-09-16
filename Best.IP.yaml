@@ -81,13 +81,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🐳 手动切换
       - 🎯 全球直连
-  - name: 🚀 Docker
+  - name: 🖥️ Docker
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🐳 手动切换
-  - name: 🚀 Lan
+  - name: 🛡️ 设备
     type: select
     proxies:
       - 🎯 全球直连
@@ -583,8 +583,8 @@ rules:
   - "RULE-SET,Own_直连,🎯 全球直连"
   - "RULE-SET,Own_代理,🔰 节点选择"
   - "RULE-SET,Own_Cloudflare,🚀 Cloudflare"
-  - "RULE-SET,Own_Docker,🚀 Docker"
-  - "RULE-SET,Own_Lan,🚀 Lan"
+  - "RULE-SET,Own_Docker,🖥️ Docker"
+  - "RULE-SET,Own_Lan,🛡️ 设备"
   - "GEOIP,CN,🎯 全球直连"
   - "RULE-SET,UnBan,🎯 全球直连"
 #  - "RULE-SET,Github,🐈‍⬛ Github"
