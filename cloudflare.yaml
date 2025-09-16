@@ -1,0 +1,5 @@
+payload:
+  - DOMAIN-SUFFIX,cloudflare.com
+  - DOMAIN-SUFFIX,cloudflare-cn.com
+  - DOMAIN-KEYWORD,cloudflare
+  - DOMAIN-SUFFIX,cloudflarestatus.com
