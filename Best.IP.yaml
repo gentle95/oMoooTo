@@ -75,6 +75,12 @@ proxy-groups:
       - 🐳 手动切换
       - 🔰 节点选择
       - 🎯 全球直连
+  - name: 🚀 Cloudflare
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - 🐳 手动切换
+      - 🎯 全球直连
   - name: ♾️ 故障转移🅰️
     type: fallback
     proxies:
@@ -538,6 +544,12 @@ rule-providers:
     path: ./ruleset/00_own_proxy.yaml 
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/proxy.yaml"
     interval: 86400
+  Own_Cloudflare:
+    type: http
+    behavior: classical
+    path: ./ruleset/00_Own_Cloudflare.yaml 
+    url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/cloudflare.yaml"
+    interval: 86400
 rules:
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
 #  - "GEOIP,CLOUDFLARE,🎯 全球直连"
@@ -546,6 +558,7 @@ rules:
   - "RULE-SET,Download,🎯 全球直连"
   - "RULE-SET,Own_直连,🎯 全球直连"
   - "RULE-SET,Own_代理,🔰 节点选择"
+  - "RULE-SET,Own_Cloudflare,🚀 Cloudflare"
   - "GEOIP,CN,🎯 全球直连"
   - "RULE-SET,UnBan,🎯 全球直连"
 #  - "RULE-SET,Github,🐈‍⬛ Github"
