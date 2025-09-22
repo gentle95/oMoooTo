@@ -12,7 +12,8 @@ chmod -R 777 {docker,docker_root}
 tee /etc/docker/daemon.json <<EOF
 {
   "registry-mirrors": [
-    "https://hub.ddxm.pp.ua"
+    "https://hub.ddxm.pp.ua", 
+    "https://proxy.pipers.cn"
   ]
 }
 EOF
