@@ -18,16 +18,16 @@ config host
 	option mac '2e:0b:07:f8:a3:f6'
 
 config host
+        option dns '1'
+        option ip '192.168.1.7'
+        option name 'Mihomo'
+        option mac 'BC:24:11:2C:D1:8E'
+
+config host
 	option dns '1'
 	option ip '192.168.1.10'
 	option mac '7A:61:A2:01:42:C1'
 	option name 'XPoU8'
-
-config host
-	option dns '1'
-	option ip '192.168.1.48'
-	option name 'Mihomo'
-	list mac 'BC:24:11:B5:12:23'
 
 config host
         option dns '1'
