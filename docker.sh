@@ -13,9 +13,8 @@ tee /etc/docker/daemon.json <<EOF
 {
   "registry-mirrors": [
     "https://hub.ddxm.pp.ua",
-    "https://docker.ketches.cn",
-    "https://docker.fnnas.com",
-    "https://registry.hub.docker.com",
+    "https://docker.xuanyuan.me",
+    "https://docker.1ms.run",
     "https://proxy.pipers.cn"
   ]
 }
