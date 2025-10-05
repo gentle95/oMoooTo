@@ -37,18 +37,18 @@ proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
-      - ♾️ 故障转移🅰️
-      - ♾️ 故障转移🅱️
-      - ♾️ 故障转移🅾️
+      - ♾️ Cloudflare优先
+      - ♾️ 🇭🇰香港优先️️
+      - ♾️ 🇺🇸美国优先️
       - 🐳 手动切换
       - 🎯 全球直连
   - name: 🐳 手动切换
     type: select
     proxies:
       - 🎯 全球直连
-      - ♾️ 故障转移🅰️
-      - ♾️ 故障转移🅱️
-      - ♾️ 故障转移🅾️
+      - ♾️ Cloudflare优先
+      - ♾️ 🇭🇰香港优先️️
+      - ♾️ 🇺🇸美国优先️
       - 🍁 CF_BPB
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
@@ -93,7 +93,7 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🐳 手动切换
-  - name: ♾️ 故障转移🅰️
+  - name: ♾️ Cloudflare优先
     type: fallback
     proxies:
       - 🍁 CF_BPB
@@ -105,7 +105,7 @@ proxy-groups:
       - 🇹🇼 台湾节点
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: ♾️ 故障转移🅱️
+  - name: ♾️ 🇭🇰香港优先️️
     type: fallback
     proxies:
       - 🇭🇰 香港节点
@@ -117,7 +117,7 @@ proxy-groups:
       - 🍁 CF_BPB
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: ♾️ 故障转移🅾️
+  - name: ♾️ 🇺🇸美国优先️
     type: fallback
     proxies:
       - 🇺🇸 美国节点
