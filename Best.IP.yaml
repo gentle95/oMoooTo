@@ -575,54 +575,51 @@ rule-providers:
     url: "https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/own_lan.yaml"
     interval: 86400
 rules:
-  - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
-#  - "GEOIP,CLOUDFLARE,🎯 全球直连"
-  - "RULE-SET,ChinaDomain,🎯 全球直连"
-  - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
-  - "RULE-SET,Download,🎯 全球直连"
-  - "RULE-SET,Own_直连,🎯 全球直连"
-  - "RULE-SET,Own_代理,🔰 节点选择"
-  - "RULE-SET,Own_Cloudflare,🚀 Cloudflare"
-  - "RULE-SET,Own_Docker,🖥️ Docker"
-  - "RULE-SET,Own_Lan,🛡️ 设备"
-  - "GEOIP,CN,🎯 全球直连"
-  - "RULE-SET,UnBan,🎯 全球直连"
-#  - "RULE-SET,Github,🐈‍⬛ Github"
-  - "RULE-SET,BanAD,🛑 广告拦截"
-  - "RULE-SET,BanProgramAD,🍃 应用净化"
-  - "RULE-SET,GoogleFCM,📢 谷歌FCM"
-  - "RULE-SET,GoogleCN,🎯 全球直连"
-  - "RULE-SET,SteamCN,🎯 全球直连"
-  - "RULE-SET,hot,㊙️ HOT"
-  - "RULE-SET,测速,🚅 网络测速"
-  - 'RULE-SET,Bing,Ⓜ️ 微软Bing'
-  - 'RULE-SET,OneDrive,Ⓜ️ 微软云盘'
-  - 'RULE-SET,Microsoft,Ⓜ️ 微软服务'
-  - "RULE-SET,Apple,🍎 苹果服务"
-  - "RULE-SET,Telegram,📲 电报消息"
-  #- "GEOIP,telegram,📲 电报消息"
-  - "RULE-SET,OpenAi,💬 OpenAi"
-  - "RULE-SET,NetEaseMusic,🎶 网易音乐"
-  - "RULE-SET,Epic,🎮 游戏平台"
-  - "RULE-SET,Origin,🎮 游戏平台"
-  - "RULE-SET,Sony,🎮 游戏平台"
-  - "RULE-SET,Steam,🎮 游戏平台"
-  - "RULE-SET,Nintendo,🎮 游戏平台"
-  - "RULE-SET,YouTube,📹 油管视频"
-  - "RULE-SET,Netflix,🎥 奈飞视频"
-  - "RULE-SET,Bahamut,📺 巴哈姆特"
-  - "RULE-SET,BilibiliHMT,📺 哔哩哔哩"
-  - "RULE-SET,Bilibili,📺 哔哩哔哩"
-  - "RULE-SET,ChinaMedia,🌏 国内媒体"
-  - "RULE-SET,ProxyMedia,🌎 国外媒体"
-  - "RULE-SET,ProxyGFWlist,🔰 节点选择"
-  - "MATCH,🐟 漏网之鱼"
+  - RULE-SET,Own_直连,🎯 全球直连
+  - RULE-SET,Own_代理,🔰 节点选择
+  - RULE-SET,hot,㊙️ HOT
+  - GEOIP,cloudflare,🚀 Cloudflare
+  - RULE-SET,Own_Cloudflare,🚀 Cloudflare
+  - RULE-SET,BanAD,🛑 广告拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
+  - GEOSITE,biliintl,📺 哔哩哔哩
+  - GEOSITE,bilibili,📺 哔哩哔哩
+  - GEOSITE,CATEGORY-AI-CHAT-!CN,💬 境外Ai
+  - RULE-SET,NetEaseMusic,🎶 网易音乐
+  - GEOSITE,apple,🍎 苹果服务
+  - GEOSITE,apple-cn,🍎 苹果服务
+  - GEOSITE,ehentai,🌎 国外媒体
+  - GEOSITE,github,🌎 国外媒体
+  - GEOSITE,twitter,🌎 国外媒体
+  - GEOSITE,youtube,📹 油管视频
+  - GEOSITE,google,📢 Google
+  - GEOSITE,google-cn,📢 Google
+  - GEOSITE,telegram,📲 电报消息
+  - GEOSITE,netflix,🎥 奈飞视频
+  - GEOSITE,bahamut,📺 巴哈姆特
+  - GEOSITE,spotify,🌎 国外媒体
+  - GEOSITE,pixiv,🌎 国外媒体
+  - GEOSITE,steam@cn,🎯 全球直连
+  - RULE-SET,Epic,🎮 游戏平台
+  - RULE-SET,Origin,🎮 游戏平台
+  - RULE-SET,Sony,🎮 游戏平台
+  - RULE-SET,Nintendo,🎮 游戏平台
+  - GEOSITE,steam,🎮 游戏平台
+  - GEOSITE,onedrive,Ⓜ️ 微软云盘
+  - GEOSITE,microsoft,Ⓜ️ 微软服务
+  - GEOSITE,geolocation-!cn,🌎 国外媒体
+  - GEOIP,google,📢 Google
+  - GEOIP,netflix,🎥 奈飞视频
+  - GEOIP,telegram,📲 电报消息
+  - GEOIP,twitter,🌎 国外媒体
+  - GEOSITE,CN,🌏 国内媒体
+  - GEOIP,CN,🌏 国内媒体
+  - MATCH,🐟 漏网之鱼
 geodata-mode: true
 geodata-loader: standard
 geox-url:
-  geosite: https://git.ddxm.pp.ua/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat
-  mmdb: https://git.ddxm.pp.ua/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.metadb
-  geoip: https://git.ddxm.pp.ua/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat
-  asn: https://git.ddxm.pp.ua/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/GeoLite2-ASN.mmdb
+  geosite: https://git.ddxm.pp.ua/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  mmdb: https://git.ddxm.pp.ua/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb
+  geoip: https://git.ddxm.pp.ua/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
 geo-auto-update: true
 geo-update-interval: 24
