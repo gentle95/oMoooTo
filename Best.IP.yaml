@@ -175,7 +175,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🐳 手动切换
       - 🎯 全球直连
-  - name: "📢 谷歌FCM"
+  - name: "📢 Google"
     type: select
     proxies:
       - 🔰 节点选择
