@@ -339,12 +339,6 @@ proxy-groups:
   - "🐳 手动切换"
   - "🎥 奈飞节点"
   - "🎯 全球直连"
-- name: "📺 巴哈姆特"
-  type: select
-  proxies:
-  - "🔰 节点选择"
-  - "🐳 手动切换"
-  - "🎯 全球直连"
 - name: "📺 哔哩哔哩"
   type: select
   proxies:
@@ -420,33 +414,30 @@ rules:
   - GEOSITE,jable,㊙️ HOT
   - GEOSITE,xvideos,㊙️ HOT
   - GEOSITE,pornhub,㊙️ HOT
-  - GEOSITE,bitwarden,🌎 国外媒体
   - GEOSITE,category-speedtest,🚅 网络测速
   - GEOSITE,cloudflare,🚀 Cloudflare
   - GEOIP,cloudflare,🚀 Cloudflare
   - GEOSITE,category-ads-all,🛑 广告拦截
   - GEOSITE,biliintl,📺 哔哩哔哩
   - GEOSITE,bilibili,📺 哔哩哔哩
+  - GEOSITE,nvidia,🎯 全球直连
+  - GEOSITE,amd,🎯 全球直连
   - GEOSITE,category-ai-chat-!cn,💬 境外Ai
   - GEOSITE,netease,🎶 网易音乐
   - GEOSITE,apple,🍎 苹果服务
   - GEOSITE,apple-cn,🍎 苹果服务
-  - GEOSITE,nvidia,🎯 全球直连
-  - GEOSITE,amd,🎯 全球直连
-  - GEOSITE,ehentai,🌎 国外媒体
-  - GEOSITE,github,🌎 国外媒体
-  - GEOSITE,twitter,🌎 国外媒体
+  - GEOSITE,bitwarden,🌎 国外媒体
   - GEOSITE,youtube,📹 油管视频
   - GEOSITE,google,📢 Google
   - GEOSITE,google-cn,📢 Google
   - GEOIP,google,📢 Google
+  - GEOSITE,github,🌎 国外媒体
+  - GEOSITE,twitter,🌎 国外媒体
+  - GEOIP,twitter,🌎 国外媒体
   - GEOSITE,telegram,📲 电报消息
   - GEOIP,telegram,📲 电报消息
   - GEOSITE,netflix,🎥 奈飞视频
   - GEOIP,netflix,🎥 奈飞视频
-  - GEOSITE,bahamut,📺 巴哈姆特
-  - GEOSITE,spotify,🌎 国外媒体
-  - GEOSITE,pixiv,🌎 国外媒体
   - GEOSITE,epicgames,🎮 游戏平台
   - GEOSITE,ea,🎮 游戏平台
   - GEOSITE,Sony,🎮 游戏平台
@@ -456,7 +447,6 @@ rules:
   - GEOSITE,microsoft,Ⓜ️ 微软服务
   # - GEOSITE,geolocation-!cn,🌎 国外媒体
   - GEOSITE,gfw,🌎 国外媒体
-  - GEOIP,twitter,🌎 国外媒体
   - GEOSITE,CN,🌏 国内媒体
   - GEOIP,CN,🌏 国内媒体
   - MATCH,🐟 漏网之鱼
