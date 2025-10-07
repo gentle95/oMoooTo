@@ -416,11 +416,11 @@ rules:
   - GEOSITE,steam@cn,🎯 全球直连
   - RULE-SET,Own_Docker,💻 Docker
   - RULE-SET,Own_Lan,🛡️ 设备
-  - RULE-SET,Own_代理,🔰 节点选择
+  - RULE-SET,Own_代理,🌎 国外媒体
   - GEOSITE,jable,㊙️ HOT
   - GEOSITE,xvideos,㊙️ HOT
   - GEOSITE,pornhub,㊙️ HOT
-  - GEOSITE,bitwarden,🔰 节点选择
+  - GEOSITE,bitwarden,🌎 国外媒体
   - GEOSITE,category-speedtest,🚅 网络测速
   - GEOSITE,cloudflare,🚀 Cloudflare
   - GEOIP,cloudflare,🚀 Cloudflare
