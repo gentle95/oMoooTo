@@ -1,286 +1,385 @@
 external-controller: 0.0.0.0:9090
-secret: "zrszyx"
-external-ui: ui
+secret: zrszyx
+external-ui: "/docker/mihomo/data/ui"
 external-ui-name: meta
 external-ui-url: "https://git.ddxm.pp.ua/github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"
+
+dns:
+  enable: true
+  ipv6: true
+  # listen: 0.0.0.0:1053
+  # 路由器个人建议使用 redir-host 以最佳兼容性
+  # 其他设备可以使用 fake-ip
+  enhanced-mode: redir-host
+  respect-rules: true
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - '*'
+    - '+.lan'
+    - '+.local'
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+    - '[2402:4e00:0::2a51:af85]'
+    - '[2400:3200::1]'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback:
+    - tls://8.8.4.4
+    - tls://1.1.1.1
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
+  nameserver-policy:
+    "geosite:cn,private":
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    "geosite:!cn,!private": 
+      - "tls://dns.google"
+      - "tls://cloudflare-dns.com"
+
+mixed-port: 7890
+socks-port: 7891
+redir-port: 7892
+port: 7893
+tproxy-port: 7894
+mode: rule
+log-level: warning
+allow-lan: true
+bind-address: "*"
+keep-alive-interval: 15
+keep-alive-idle: 15
+ipv6: true
+tcp-concurrent: true
+unified-delay: true
+authentication:
+  - "zou:chenli5"
+skip-auth-prefixes:
+  - 127.0.0.1/8
+  - 192.168.1.0/24
+  - ::1/128
+
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  force-dns-mapping: true
+  override-destination: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  force-domain:
+    - "+.netflix.com"
+    - "+.nflxvideo.net"
+    - "+.amazonaws.com"
+    - "+.media.dssott.com"
+  skip-domain:
+    - "+.apple.com"
+    - Mijia Cloud
+    - dlg.io.mi.com
+    - "+.oray.com"
+    - "+.sunlogin.net"
+    - "+.push.apple.com"
+
+tun:
+  enable: false  # enable 'true'
+  stack: system  # or 'gvisor'
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  auto-route: true
+  auto-detect-interface: true
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+geodata-mode: true
+geodata-loader: standard
+geox-url:
+  geosite: https://git.ddxm.pp.ua/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  mmdb: https://git.ddxm.pp.ua/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb
+  geoip: https://git.ddxm.pp.ua/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
+geo-auto-update: true
+geo-update-interval: 24
+
 proxy-providers:
   FreeOnline:
     type: http
-    # url: "https://git.ddxm.pp.ua/gist.githubusercontent.com/gentle95/d03f3566f71e77c14f292f66013002e0/raw/all.yaml"
-    # url: "https://check.ddxm.pp.ua/gist?key=all.yaml&token=wZAkFG8yd5A424o7"
-    url: "https://d.ddx2013.cc:58299/download/sub?target=ClashMeta"
-    path: ./proxy/freeonline.yaml
+    url: https://home.ddx2013.cc:58299/download/sub?target=ClashMeta
+    path: "./proxy_provider/freeonline.yaml"
     interval: 7200
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: https://cp.cloudflare.com/generate_204
       interval: 300
   CF_BPB:
     type: http
-    url: "https://ooo.ddxm.pp.ua/sub/normal/ce8b5bb9-bff8-41bb-977b-19d2f58c089d?app=clash#%F0%9F%92%A6%20BPB%20Normal"
-    path: ./proxy/CF_BPB.yaml
+    url: https://ooo.ddxm.pp.ua/sub/normal/ce8b5bb9-bff8-41bb-977b-19d2f58c089d?app=clash#%F0%9F%92%A6%20BPB%20Normal
+    path: "./proxy_provider/CF_BPB.yaml"
     interval: 7200
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: https://cp.cloudflare.com/generate_204
       interval: 300
   Hold:
     type: http
-    url: "https://d.ddx2013.cc:53001/Xvn47M4QzvZXgn65/download/hold?target=ClashMeta"
-    path: ./proxy/Hold.yaml
+    url: https://home.ddx2013.cc:53001/Xvn47M4QzvZXgn65/download/hold?target=ClashMeta
+    path: "./proxy_provider/Hold.yaml"
     interval: 7200
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: https://cp.cloudflare.com/generate_204
       interval: 300
+
 proxy-groups:
-  - name: 🔰 节点选择
-    type: select
-    proxies:
-      - 🧿 Cloudflare优先
-      - 🧿 🇭🇰香港优先️
-      - 🧿 🇺🇸美国优先️
-      - 🐳 手动切换
-      - 🎯 全球直连
-  - name: 🐳 手动切换
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🧿 Cloudflare优先
-      - 🧿 🇭🇰香港优先️
-      - 🧿 🇺🇸美国优先️
-      - 🍁 CF_BPB
-      - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇹🇼 台湾节点
-      - 🇺🇸 美国节点
-      - 🏳️‍🌈 其它节点
-    include-all: true
-  - name: 🍁 CF_BPB
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    use:
-      - CF_BPB
-  - name: 🍂 FreeOnline
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    use:
-      - FreeOnline
-  - name: ㊙️ HOT
-    type: select
-    proxies:
-      - 🐳 手动切换
-      - 🔰 节点选择
-      - 🎯 全球直连
-  - name: 🚀 Cloudflare
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🎯 全球直连
-  - name: 🖥️ Docker
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🔰 节点选择
-      - 🐳 手动切换
-  - name: 🛡️ 设备
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🔰 节点选择
-      - 🐳 手动切换
-  - name: 🧿 Cloudflare优先
-    type: fallback
-    proxies:
-      - 🍁 CF_BPB
-      - 🇺🇸 美国节点
-      - 🏳️‍🌈 其它节点
-      - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇹🇼 台湾节点
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: 🧿 🇭🇰香港优先️
-    type: fallback
-    proxies:
-      - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇹🇼 台湾节点
-      - 🇺🇸 美国节点
-      - 🏳️‍🌈 其它节点
-      - 🍁 CF_BPB
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: 🧿 🇺🇸美国优先️
-    type: fallback
-    proxies:
-      - 🇺🇸 美国节点
-      - 🏳️‍🌈 其它节点
-      - 🍁 CF_BPB
-      - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇹🇼 台湾节点
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: 🇭🇰 香港节点
-    include-all: true
-    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
-    type: url-test
-    interval: 300
-  - name: 🇯🇵 日本节点
-    include-all: true
-    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-    type: url-test
-    interval: 300
-  - name: 🇺🇸 美国节点
-    include-all: true
-    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-    type: url-test
-    interval: 300
-  - name: 🇹🇼 台湾节点
-    include-all: true
-    filter: (?i)台|新北|彰化|TW|Taiwan
-    type: url-test
-    interval: 300
-  - name: 🇸🇬 狮城节点
-    include-all: true
-    filter: (?i)新加坡|坡|狮城|SG|Singapore
-    type: url-test
-    interval: 300
-  - name: 🏳️‍🌈 其它节点
-    include-all: true
-    exclude-filter: (?i)新加坡|坡|狮城|SG|Singapore|港|HK|hk|Hong Kong|HongKong|hongkong|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|台|新北|彰化|TW|Taiwan|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|💦
-    type: url-test
-    interval: 300
-  - name: "🎥 奈飞节点"
-    include-all: true
-    filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
-    type: select
-  - name: 🌏 国内媒体
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🔰 节点选择
-      - 🐳 手动切换
-  - name: 🌎 国外媒体
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🎯 全球直连
-  - name: "📢 Google"
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🎯 全球直连
-  - name: Ⓜ️ 微软Bing
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🔰 节点选择
-      - 🐳 手动切换
-  - name: Ⓜ️ 微软云盘
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🔰 节点选择
-      - 🐳 手动切换
-  - name: Ⓜ️ 微软服务
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🎯 全球直连
-  - name: 🎮 游戏平台
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🎯 全球直连
-  - name: 📲 电报消息
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🎯 全球直连
-  - name: 🍎 苹果服务
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🎯 全球直连
-  - name: 🚅 网络测速
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🔰 节点选择
-      - 🐳 手动切换
-  - name: 📹 油管视频
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🎯 全球直连
-  - name: 🎥 奈飞视频
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🎥 奈飞节点
-      - 🎯 全球直连
-  - name: 📺 巴哈姆特
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🎯 全球直连
-  - name: 📺 哔哩哔哩
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🔰 节点选择
-      - 🐳 手动切换
-  - name: 💬 境外Ai
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - 🐳 手动切换
-      - 🎯 全球直连
-  - name: 🎶 网易音乐
-    type: select
-    include-all: true
-    filter: (?i)网易|音乐|NetEase|Music
-    proxies:
-      - 🎯 全球直连
-      - 🔰 节点选择
-      - 🐳 手动切换
-  - name: 🛑 广告拦截
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🚫 全球拦截
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
-  - name: 🚫 全球拦截
-    type: select
-    proxies:
-      - REJECT
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🔰 节点选择
-      - 🐳 手动切换
+- name: "🔰 节点选择"
+  type: select
+  proxies:
+  - "🧿 Cloudflare优先"
+  - "🧿 🇭🇰香港优先️"
+  - "🧿 🇺🇸美国优先"
+  - "🐳 手动切换"
+  - "🎯 全球直连"
+- name: "🐳 手动切换"
+  type: select
+  proxies:
+  - "🎯 全球直连"
+  - "🧿 Cloudflare优先"
+  - "🧿 🇭🇰香港优先️"
+  - "🧿 🇺🇸美国优先"
+  - "🍁 CF_BPB"
+  - "🇭🇰 香港节点"
+  - "🇸🇬 狮城节点"
+  - "🇯🇵 日本节点"
+  - "🇹🇼 台湾节点"
+  - "🇺🇸 美国节点"
+  - "🏳️‍🌈 其它节点"
+  include-all: true
+- name: "🍁 CF_BPB"
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  use:
+  - CF_BPB
+- name: "🍂 FreeOnline"
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  use:
+  - FreeOnline
+- name: "㊙️ HOT"
+  type: select
+  proxies:
+  - "🐳 手动切换"
+  - "🔰 节点选择"
+  - "🎯 全球直连"
+- name: "🚀 Cloudflare"
+  type: select
+  proxies:
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+  - "🎯 全球直连"
+- name: "🧿 Cloudflare优先"
+  type: fallback
+  proxies:
+  - "🍁 CF_BPB"
+  - "🇺🇸 美国节点"
+  - "🏳️‍🌈 其它节点"
+  - "🇭🇰 香港节点"
+  - "🇹🇼 台湾节点"
+  - "🇸🇬 狮城节点"
+  - "🇯🇵 日本节点"
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+- name: "🧿 🇭🇰香港优先️"
+  type: fallback
+  proxies:
+  - "🇭🇰 香港节点"
+  - "🇹🇼 台湾节点"
+  - "🇸🇬 狮城节点"
+  - "🇯🇵 日本节点"
+  - "🇺🇸 美国节点"
+  - "🏳️‍🌈 其它节点"
+  - "🍁 CF_BPB"
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+- name: "🧿 🇺🇸美国优先"
+  type: fallback
+  proxies:
+  - "🇺🇸 美国节点"
+  - "🏳️‍🌈 其它节点"
+  - "🍁 CF_BPB"
+  - "🇭🇰 香港节点"
+  - "🇹🇼 台湾节点"
+  - "🇸🇬 狮城节点"
+  - "🇯🇵 日本节点"
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+- name: "🇭🇰 香港节点"
+  include-all: true
+  filter: "(?i)港|HK|hk|Hong Kong|HongKong|hongkong"
+  type: url-test
+  interval: 300
+  url: https://cp.cloudflare.com/generate_204
+- name: "🇯🇵 日本节点"
+  include-all: true
+  filter: "(?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan"
+  type: url-test
+  interval: 300
+  url: https://cp.cloudflare.com/generate_204
+- name: "🇺🇸 美国节点"
+  include-all: true
+  filter: "(?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States"
+  type: url-test
+  interval: 300
+  url: https://cp.cloudflare.com/generate_204
+- name: "🇹🇼 台湾节点"
+  include-all: true
+  filter: "(?i)台|新北|彰化|TW|Taiwan"
+  type: url-test
+  interval: 300
+  url: https://cp.cloudflare.com/generate_204
+- name: "🇸🇬 狮城节点"
+  include-all: true
+  filter: "(?i)新加坡|坡|狮城|SG|Singapore"
+  type: url-test
+  interval: 300
+  url: https://cp.cloudflare.com/generate_204
+- name: "🏳️‍🌈 其它节点"
+  include-all: true
+  exclude-filter: "(?i)新加坡|坡|狮城|SG|Singapore|港|HK|hk|Hong Kong|HongKong|hongkong|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United
+    States|台|新北|彰化|TW|Taiwan|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|\U0001F4A6"
+  type: url-test
+  interval: 300
+  url: https://cp.cloudflare.com/generate_204
+- name: "🎥 奈飞节点"
+  include-all: true
+  filter: "(?i)NF|奈飞|解锁|Netflix|NETFLIX|Media"
+  type: select
+- name: "🌏 国内媒体"
+  type: select
+  proxies:
+  - "🎯 全球直连"
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+- name: "🌎 国外媒体"
+  type: select
+  proxies:
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+  - "🎯 全球直连"
+- name: "📢 Google"
+  type: select
+  proxies:
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+  - "🎯 全球直连"
+- name: Ⓜ️ 微软Bing
+  type: select
+  proxies:
+  - "🎯 全球直连"
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+- name: Ⓜ️ 微软云盘
+  type: select
+  proxies:
+  - "🎯 全球直连"
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+  - "🎯 全球直连"
+- name: "🎮 游戏平台"
+  type: select
+  proxies:
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+  - "🎯 全球直连"
+- name: "📲 电报消息"
+  type: select
+  proxies:
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+  - "🎯 全球直连"
+- name: "🍎 苹果服务"
+  type: select
+  proxies:
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+  - "🎯 全球直连"
+- name: "🚅 网络测速"
+  type: select
+  proxies:
+  - "🎯 全球直连"
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+- name: "📹 油管视频"
+  type: select
+  proxies:
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+  - "🎯 全球直连"
+- name: "🎥 奈飞视频"
+  type: select
+  proxies:
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+  - "🎥 奈飞节点"
+  - "🎯 全球直连"
+- name: "📺 巴哈姆特"
+  type: select
+  proxies:
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+  - "🎯 全球直连"
+- name: "📺 哔哩哔哩"
+  type: select
+  proxies:
+  - "🎯 全球直连"
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+- name: "💬 境外Ai"
+  type: select
+  proxies:
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+  - "🎯 全球直连"
+- name: "🎶 网易音乐"
+  type: select
+  include-all: true
+  filter: "(?i)网易|音乐|NetEase|Music"
+  proxies:
+  - "🎯 全球直连"
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+- name: "🛑 广告拦截"
+  type: select
+  proxies:
+  - "🎯 全球直连"
+  - "🚫 全球拦截"
+- name: "🎯 全球直连"
+  type: select
+  proxies:
+  - DIRECT
+- name: "🚫 全球拦截"
+  type: select
+  proxies:
+  - REJECT
+- name: "🐟 漏网之鱼"
+  type: select
+  proxies:
+  - "🎯 全球直连"
+  - "🔰 节点选择"
+  - "🐳 手动切换"
 
 rule-providers:
   hot:
@@ -313,6 +412,7 @@ rule-providers:
     path: "./rule_provider/00_Own_lan.yaml"
     url: https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/own_lan.yaml
     interval: 86400
+
 rules:
   - RULE-SET,Own_直连,🎯 全球直连
   - GEOSITE,steam@cn,🎯 全球直连
@@ -354,11 +454,3 @@ rules:
   - GEOSITE,CN,🌏 国内媒体
   - GEOIP,CN,🌏 国内媒体
   - MATCH,🐟 漏网之鱼
-geodata-mode: true
-geodata-loader: standard
-geox-url:
-  geosite: https://git.ddxm.pp.ua/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
-  mmdb: https://git.ddxm.pp.ua/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb
-  geoip: https://git.ddxm.pp.ua/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
-geo-auto-update: true
-geo-update-interval: 24
