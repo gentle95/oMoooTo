@@ -31,13 +31,6 @@ dns:
     - tls://1.1.1.1
   proxy-server-nameserver:
     - https://doh.pub/dns-query
-  nameserver-policy:
-    "geosite:cn,private":
-      - https://doh.pub/dns-query
-      - https://dns.alidns.com/dns-query
-    "geosite:!cn,!private": 
-      - "tls://dns.google"
-      - "tls://cloudflare-dns.com"
 
 mixed-port: 7890
 socks-port: 7891
