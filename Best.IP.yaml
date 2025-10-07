@@ -221,6 +221,18 @@ proxy-groups:
   - "🇯🇵 日本节点"
   url: https://cp.cloudflare.com/generate_204
   interval: 300
+- name: "🖥 Docker"
+  type: select
+  proxies:
+  - "🎯 全球直连"
+  - "🔰 节点选择"
+  - "🐳 手动切换"
+- name: "🛡 设备"
+  type: select
+  proxies:
+  - "🎯 全球直连"
+  - "🔰 节点选择"
+  - "🐳 手动切换"
 - name: "🇭🇰 香港节点"
   include-all: true
   filter: "(?i)港|HK|hk|Hong Kong|HongKong|hongkong"
@@ -416,6 +428,8 @@ rule-providers:
 rules:
   - RULE-SET,Own_直连,🎯 全球直连
   - GEOSITE,steam@cn,🎯 全球直连
+  - RULE-SET,Own_Docker,🖥 Docker
+  - RULE-SET,Own_Lan,🛡 设备
   - RULE-SET,Own_代理,🔰 节点选择
   - RULE-SET,hot,㊙️ HOT
   - GEOSITE,category-speedtest,🚅 网络测速
