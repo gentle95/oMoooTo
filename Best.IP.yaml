@@ -267,11 +267,6 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚫 全球拦截
-  - name: "🍃 应用净化"
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🚫 全球拦截
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -288,20 +283,6 @@ proxy-groups:
       - 🐳 手动切换
 
 rule-providers:
-  BanAD:
-    url: https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-    path: "./rule_provider/00_BanAD.list"
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  BanProgramAD:
-    url: https://git.ddxm.pp.ua/raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-    path: "./rule_provider/00_BanProgramAD.list"
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
   hot:
     type: http
     behavior: classical
@@ -339,11 +320,10 @@ rules:
   - GEOSITE,category-speedtest,🚅 网络测速
   - GEOIP,cloudflare,🚀 Cloudflare
   - GEOSITE,cloudflare,🚀 Cloudflare
-  - RULE-SET,BanAD,🛑 广告拦截
-  - RULE-SET,BanProgramAD,🍃 应用净化
+  - GEOSITE,category-ads-all,🛑 广告拦截
   - GEOSITE,biliintl,📺 哔哩哔哩
   - GEOSITE,bilibili,📺 哔哩哔哩
-  - GEOSITE,CATEGORY-AI-CHAT-!CN,💬 境外Ai
+  - GEOSITE,category-ai-chat-!cn,💬 境外Ai
   - GEOSITE,netease,🎶 网易音乐
   - GEOSITE,apple,🍎 苹果服务
   - GEOSITE,apple-cn,🍎 苹果服务
