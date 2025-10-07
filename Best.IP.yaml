@@ -1,6 +1,6 @@
 external-controller: 0.0.0.0:9090
 secret: zrszyx
-external-ui: "/docker/mihomo/data/ui"
+external-ui: ui
 external-ui-name: meta
 external-ui-url: "https://git.ddxm.pp.ua/github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"
 
