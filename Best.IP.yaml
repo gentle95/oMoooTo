@@ -386,12 +386,6 @@ proxy-groups:
   - "🐳 手动切换"
 
 rule-providers:
-  hot:
-    type: http
-    behavior: classical
-    path: "./rule_provider/00_hot.yaml"
-    url: https://git.ddxm.pp.ua/raw.githubusercontent.com/gentle95/oMoooTo/rules/hot.yaml
-    interval: 86400
   Own_直连:
     type: http
     behavior: classical
@@ -423,10 +417,13 @@ rules:
   - RULE-SET,Own_Docker,💻 Docker
   - RULE-SET,Own_Lan,🛡️ 设备
   - RULE-SET,Own_代理,🔰 节点选择
-  - RULE-SET,hot,㊙️ HOT
+  - GEOSITE,jable,㊙️ HOT
+  - GEOSITE,xvideos,㊙️ HOT
+  - GEOSITE,pornhub,㊙️ HOT
+  - GEOSITE,bitwarden,🔰 节点选择
   - GEOSITE,category-speedtest,🚅 网络测速
-  - GEOIP,cloudflare,🚀 Cloudflare
   - GEOSITE,cloudflare,🚀 Cloudflare
+  - GEOIP,cloudflare,🚀 Cloudflare
   - GEOSITE,category-ads-all,🛑 广告拦截
   - GEOSITE,biliintl,📺 哔哩哔哩
   - GEOSITE,bilibili,📺 哔哩哔哩
@@ -434,6 +431,8 @@ rules:
   - GEOSITE,netease,🎶 网易音乐
   - GEOSITE,apple,🍎 苹果服务
   - GEOSITE,apple-cn,🍎 苹果服务
+  - GEOSITE,nvidia,🎯 全球直连
+  - GEOSITE,amd,🎯 全球直连
   - GEOSITE,ehentai,🌎 国外媒体
   - GEOSITE,github,🌎 国外媒体
   - GEOSITE,twitter,🌎 国外媒体
@@ -455,7 +454,8 @@ rules:
   - GEOSITE,steam,🎮 游戏平台
   - GEOSITE,onedrive,Ⓜ️ 微软云盘
   - GEOSITE,microsoft,Ⓜ️ 微软服务
-  - GEOSITE,geolocation-!cn,🌎 国外媒体
+  # - GEOSITE,geolocation-!cn,🌎 国外媒体
+  - GEOSITE,gfw,🌎 国外媒体
   - GEOIP,twitter,🌎 国外媒体
   - GEOSITE,CN,🌏 国内媒体
   - GEOIP,CN,🌏 国内媒体
