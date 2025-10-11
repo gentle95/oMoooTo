@@ -200,8 +200,6 @@ proxy-groups:
   - "🇹🇼 台湾节点"
   - "🇸🇬 狮城节点"
   - "🇯🇵 日本节点"
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
 - name: "🧿 🇭🇰香港优先️"
   type: fallback
   proxies:
@@ -212,8 +210,6 @@ proxy-groups:
   - "🇺🇸 美国节点"
   - "🏳️‍🌈 其它节点"
   - "🍁 CF_BPB"
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
 - name: "🧿 🇺🇸美国优先"
   type: fallback
   proxies:
@@ -224,44 +220,30 @@ proxy-groups:
   - "🇹🇼 台湾节点"
   - "🇸🇬 狮城节点"
   - "🇯🇵 日本节点"
-  url: https://cp.cloudflare.com/generate_204
-  interval: 300
 - name: "🇭🇰 香港节点"
   include-all: true
   filter: "(?i)港|HK|hk|Hong Kong|HongKong|hongkong"
   type: url-test
-  interval: 300
-  url: https://cp.cloudflare.com/generate_204
 - name: "🇯🇵 日本节点"
   include-all: true
   filter: "(?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan"
   type: url-test
-  interval: 300
-  url: https://cp.cloudflare.com/generate_204
 - name: "🇺🇸 美国节点"
   include-all: true
   filter: "(?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States"
   type: url-test
-  interval: 300
-  url: https://cp.cloudflare.com/generate_204
 - name: "🇹🇼 台湾节点"
   include-all: true
   filter: "(?i)台|新北|彰化|TW|Taiwan"
   type: url-test
-  interval: 300
-  url: https://cp.cloudflare.com/generate_204
 - name: "🇸🇬 狮城节点"
   include-all: true
   filter: "(?i)新加坡|坡|狮城|SG|Singapore"
   type: url-test
-  interval: 300
-  url: https://cp.cloudflare.com/generate_204
 - name: "🏳️‍🌈 其它节点"
   include-all: true
   exclude-filter: "(?i)新加坡|坡|狮城|SG|Singapore|港|HK|hk|Hong Kong|HongKong|hongkong|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|台|新北|彰化|TW|Taiwan|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|💦"
   type: url-test
-  interval: 300
-  url: https://cp.cloudflare.com/generate_204
 - name: "🎥 奈飞节点"
   include-all: true
   filter: "(?i)NF|奈飞|解锁|Netflix|NETFLIX|Media"
@@ -411,6 +393,7 @@ rules:
   - RULE-SET,Own_Docker,💻 Docker
   - RULE-SET,Own_Lan,🛡️ 设备
   - RULE-SET,Own_代理,🌎 国外媒体
+  - GEOSITE,category-anticensorship,🌎 国外媒体
   - GEOSITE,jable,㊙️ HOT
   - GEOSITE,xvideos,㊙️ HOT
   - GEOSITE,pornhub,㊙️ HOT
