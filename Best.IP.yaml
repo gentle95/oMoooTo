@@ -398,8 +398,6 @@ rules:
   - GEOSITE,xvideos,㊙️ HOT
   - GEOSITE,pornhub,㊙️ HOT
   - GEOSITE,category-speedtest,🚅 网络测速
-  - GEOSITE,cloudflare,🚀 Cloudflare
-  - GEOIP,cloudflare,🚀 Cloudflare
   - GEOSITE,category-ads-all,🛑 广告拦截
   - GEOSITE,biliintl,📺 哔哩哔哩
   - GEOSITE,bilibili,📺 哔哩哔哩
@@ -429,6 +427,8 @@ rules:
   - GEOSITE,onedrive,Ⓜ️ 微软云盘
   - GEOSITE,microsoft,Ⓜ️ 微软服务
   # - GEOSITE,geolocation-!cn,🌎 国外媒体
+  - GEOSITE,cloudflare,🚀 Cloudflare
+  - GEOIP,cloudflare,🚀 Cloudflare
   - GEOSITE,gfw,🌎 国外媒体
   - GEOSITE,CN,🌏 国内媒体
   - GEOIP,CN,🌏 国内媒体
