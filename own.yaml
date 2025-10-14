@@ -2,6 +2,7 @@ payload:
   - DOMAIN-SUFFIX,ddx2013.cc
   - DOMAIN-SUFFIX,ddx2013.link
   - DOMAIN-SUFFIX,ddxm.pp.ua
+  - DOMAIN-SUFFIX,ddx.pp.ua
   - DOMAIN-SUFFIX,byruthub.org
   - DOMAIN,cdn.jsdelivr.net
   - DOMAIN-SUFFIX,gamer520.com
@@ -12,10 +13,6 @@ payload:
   - DOMAIN-SUFFIX,jd.com
   - DOMAIN-SUFFIX,workers.dev
   - DOMAIN-SUFFIX,docker.xiaoya.pro
-  - DOMAIN-SUFFIX,gitlab.com
-  - DOMAIN-SUFFIX,quark.com
-  - DOMAIN-SUFFIX,quark.cn
-  - DOMAIN-KEYWORD,quark
   - DOMAIN-KEYWORD,taobao
   - DOMAIN-KEYWORD,tmall
   - DOMAIN-KEYWORD,vmall
