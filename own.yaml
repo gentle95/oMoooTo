@@ -2,3 +2,6 @@ payload:
   - DOMAIN-SUFFIX,ddx2013.cc
   - DOMAIN-SUFFIX,ddxm.pp.ua
   - DOMAIN-SUFFIX,ddx.pp.ua
+  - IP-CIDR,192.168.0.0/16
+  - IP-CIDR,10.0.0.0/8
+  - IP-CIDR,172.16.0.0/12
